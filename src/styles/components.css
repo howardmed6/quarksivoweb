@@ -1,0 +1,397 @@
+/* TopBanner Styles */
+.top-banner {
+  background-color: black;
+  color: white;
+  padding: 12px 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-nav-btn {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.banner-message {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+/* MainHeader Styles */
+.main-header {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 16px 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-item.active {
+  color: #666;
+  text-decoration: underline;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon-btn {
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background-color: #f3f4f6;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: black;
+}
+
+.mobile-menu-toggle svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile Navigation Overlay */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+
+.mobile-nav-overlay.open {
+  display: block;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.mobile-nav-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: black;
+}
+
+.mobile-nav-items {
+  padding: 24px;
+}
+
+.mobile-nav-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 16px 0;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f4f6;
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-item:hover,
+.mobile-nav-item.active {
+  color: #666;
+}
+
+.mobile-nav-actions {
+  padding: 24px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Tablet Styles (768px - 1023px) */
+@media (max-width: 1023px) {
+  .main-header {
+    padding: 12px 16px;
+  }
+  
+  .brand-name {
+    font-size: 28px;
+  }
+  
+  .main-nav {
+    gap: 24px;
+  }
+  
+  .header-actions {
+    gap: 12px;
+  }
+}
+
+/* Mobile Styles (max-width: 767px) */
+@media (max-width: 767px) {
+  .main-header {
+    padding: 12px 16px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+  }
+  
+  /* Hide desktop navigation */
+  .main-nav {
+    display: none;
+  }
+  
+  /* Show mobile menu toggle */
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  /* Show mobile navigation */
+  .mobile-nav {
+    display: block;
+  }
+  
+  .header-actions {
+    gap: 8px;
+  }
+  
+  /* Hide some header actions on very small screens */
+  .header-actions .icon-btn:first-child {
+    display: none;
+  }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .main-header {
+    padding: 8px 12px;
+  }
+  
+  .brand-name {
+    font-size: 20px;
+  }
+  
+  .logo-section {
+    gap: 8px;
+  }
+  
+  .mobile-nav {
+    width: 100%;
+  }
+  
+  .banner-message {
+    font-size: 12px;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .mobile-nav {
+    overflow-y: auto;
+  }
+  
+  .mobile-nav-items {
+    padding: 16px 24px;
+  }
+  
+  .mobile-nav-item {
+    padding: 12px 0;
+  }
+}
+
+/* Footer Styles (unchanged) */
+.main-footer {
+  background-color: black;
+  color: white;
+  padding: 14px 24px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-section {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.email-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.email-input {
+  flex: 1;
+  padding: 8px 16px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
+  max-width: 200px;
+}
+
+.email-input::placeholder {
+  color: #ccc;
+}
+
+.submit-btn {
+  margin-left: 8px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  justify-content: center;
+}
+
+.social-link {
+  color: white;
+}
+
+.currency-selector {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 4px 12px;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.currency-option {
+  background-color: black;
+}
+
+.copyright {
+  border-top: 1px solid #374151;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #9CA3AF;
+}

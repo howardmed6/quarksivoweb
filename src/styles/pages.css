@@ -1,0 +1,41 @@
+/* Home Page */
+.home-main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+.home-content {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.home-subtitle {
+  color: #6b7280;
+}
+
+/* Generic Page Styles */
+.page-main {
+  min-height: 70vh;
+  padding: 64px 24px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.page-subtitle {
+  color: #6b7280;
+  font-size: 18px;
+}

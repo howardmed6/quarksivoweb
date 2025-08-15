@@ -1,0 +1,69 @@
+/* Grilla de conversiones */
+.conversion-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.conversion-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 120px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.conversion-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* Colores para cada tipo */
+.conversion-card.top-priority {
+  background: linear-gradient(135deg, #FF6B35, #FF8A5B);
+  color: white;
+}
+
+.conversion-card.blue {
+  background: linear-gradient(135deg, #4A90E2, #5BA0F2);
+  color: white;
+}
+
+.conversion-card.green {
+  background: linear-gradient(135deg, #32CD32, #50E850);
+  color: white;
+}
+
+.conversion-card.orange {
+  background: linear-gradient(135deg, #FF4500, #FF6B35);
+  color: white;
+}
+
+.conversion-card.black {
+  background: linear-gradient(135deg, #333, #555);
+  color: white;
+}

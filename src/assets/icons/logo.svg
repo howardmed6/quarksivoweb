@@ -1,0 +1,24 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculos principales más grandes -->
+  <circle cx="150" cy="120" r="12" fill="#00BFFF" />
+  <circle cx="120" cy="180" r="12" fill="#32CD32" />
+  <circle cx="180" cy="180" r="12" fill="#FF4500" />
+  
+  <!-- Conexiones entre círculos -->
+  <path d="M150 120 Q135 150 120 180" stroke="#999" strokeWidth="2.5" fill="none"/>
+  <path d="M150 120 Q165 150 180 180" stroke="#999" strokeWidth="2.5" fill="none"/>
+  <path d="M120 180 Q150 200 180 180" stroke="#999" strokeWidth="2.5" fill="none"/>
+  
+  <!-- Líneas superiores del círculo azul -->
+  <line x1="150" y1="108" x2="150" y2="40" stroke="#00BFFF" strokeWidth="2"/>
+  <line x1="142" y1="114" x2="110" y2="60" stroke="#00BFFF" strokeWidth="2"/>
+  <line x1="158" y1="114" x2="190" y2="60" stroke="#00BFFF" strokeWidth="2"/>
+  
+  <!-- Líneas del círculo verde -->
+  <line x1="108" y1="184" x2="40" y2="210" stroke="#32CD32" strokeWidth="2"/>
+  <line x1="114" y1="190" x2="60" y2="240" stroke="#32CD32" strokeWidth="2"/>
+  
+  <!-- Líneas del círculo naranja -->
+  <line x1="192" y1="184" x2="260" y2="210" stroke="#FF4500" strokeWidth="2"/>
+  <line x1="186" y1="190" x2="240" y2="240" stroke="#FF4500" strokeWidth="2"/>
+</svg>

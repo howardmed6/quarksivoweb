@@ -1,0 +1,163 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .conversion-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .home-header {
+    gap: 30px;
+  }
+
+  .home-video-section {
+    max-width: 650px;
+  }
+
+  .home-video {
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .conversion-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-header {
+    gap: 25px;
+  }
+
+  .home-video-section {
+    max-width: 600px;
+  }
+
+  .home-video {
+    height: 160px;
+  }
+}
+
+/* Tablet y móvil - El video se mueve debajo del título */
+@media (max-width: 768px) {
+  .home-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .home-text-section {
+    justify-content: center;
+  }
+
+  .home-video-section {
+    width: 100%;
+    max-width: 550px;
+    margin-top: 15px;
+  }
+
+  .home-video-section::after {
+    font-size: 16px;
+    top: 8px;
+    right: 12px;
+  }
+
+  .home-video {
+    height: 140px;
+  }
+
+  .conversion-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .conversion-card {
+    padding: 16px;
+    min-height: 100px;
+  }
+
+  .card-icon {
+    font-size: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 0.8rem;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-subtitle {
+    font-size: 1rem;
+  }
+
+  .priority-legend {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    gap: 20px;
+  }
+
+  .home-text-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .home-video-section {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .home-video-section::after {
+    font-size: 14px;
+    top: 6px;
+    right: 10px;
+  }
+
+  .home-video {
+    height: 120px;
+    border-radius: 8px;
+  }
+
+  .conversion-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .conversion-card {
+    padding: 20px;
+    min-height: 80px;
+  }
+
+  .home-content {
+    padding: 20px;
+  }
+
+  .home-title {
+    font-size: 1.6rem;
+  }
+
+  .home-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 360px) {
+  .home-video {
+    height: 100px;
+  }
+
+  .home-title {
+    font-size: 1.4rem;
+  }
+}

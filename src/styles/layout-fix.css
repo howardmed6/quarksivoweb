@@ -1,0 +1,24 @@
+/* Contenedor principal que permite que todo vaya verticalmente */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Modificar el home-main para que no interfiera */
+.home-main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafb;
+  /* Remover cualquier flex que pueda causar problemas horizontales */
+  flex-shrink: 0;
+}
+
+/* Asegurar que las secciones de features vayan abajo */
+.features-container {
+  width: 100%;
+  flex-shrink: 0;
+}

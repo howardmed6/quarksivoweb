@@ -1,0 +1,41 @@
+/* Leyenda de prioridades */
+.priority-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.top-priority-dot {
+  background: linear-gradient(135deg, #FF6B35, #FF8A5B);
+}
+
+.high-priority-dot {
+  background: linear-gradient(135deg, #4A90E2, #5BA0F2);
+}
+
+.medium-priority-dot {
+  background: linear-gradient(135deg, #32CD32, #50E850);
+}
+
+.low-priority-dot {
+  background: linear-gradient(135deg, #333, #555);
+}
