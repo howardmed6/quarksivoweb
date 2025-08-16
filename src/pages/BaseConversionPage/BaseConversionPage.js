@@ -20,9 +20,7 @@ const BaseConversionPage = ({
   const [convertedImage, setConvertedImage] = useState(null);
   const [conversionResult, setConversionResult] = useState(null);
 
-  // URL de tu Azure Function - ACTUALÍZALA CON TU CODESPACE O AZURE URL
-// En BaseConversionPage.js, cambia:
-const AZURE_FUNCTION_URL = 'https://quarksivo.azurewebsites.net/api/convert/jpg-to-png';
+const AZURE_FUNCTION_URL = 'https://quarksivof-hsbqfddpf4e5a7gj.canadacentral-01.azurewebsites.net/api/convert/jpg-to-png';
   const handleConvert = async () => {
     if (!isFileValid || !file) return;
 
