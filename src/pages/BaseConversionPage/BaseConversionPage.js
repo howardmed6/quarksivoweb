@@ -203,28 +203,7 @@ const BaseConversionPage = ({
             isFileValid={isFileValid}
           />
 
-          {conversionResult && (
-            <div className="conversion-result">
-              <div className="result-info">
-                <h3>✅ {conversionResult.message}</h3>
-                <div className="result-stats">
-                  <p><strong>Tiempo de procesamiento:</strong> {conversionResult.processingTime}ms</p>
-                  {conversionResult.originalSize > 0 && (
-                    <>
-                      <p><strong>Tamaño original:</strong> {(conversionResult.originalSize / 1024 / 1024).toFixed(2)} MB</p>
-                      <p><strong>Tamaño procesado:</strong> {(conversionResult.processedSize / 1024 / 1024).toFixed(2)} MB</p>
-                      {parseFloat(conversionResult.compressionRatio) > 0 && (
-                        <p><strong>Reducción:</strong> {conversionResult.compressionRatio}%</p>
-                      )}
-                    </>
-                  )}
-                  {conversionResult.appliedOptions.length > 0 && (
-                    <p><strong>Opciones aplicadas:</strong> {conversionResult.appliedOptions.join(', ')}</p>
-                  )}
-                </div>
-              </div>
-            </div>
-          )}
+
 
           <div className="action-buttons">
             <button 
@@ -253,22 +232,7 @@ const BaseConversionPage = ({
             )}
           </div>
 
-          {convertedImage && (
-            <div className="image-preview">
-              <h3>Vista previa:</h3>
-              <img 
-                src={convertedImage} 
-                alt="Imagen convertida" 
-                style={{ 
-                  maxWidth: '100%', 
-                  maxHeight: '400px', 
-                  border: '1px solid #ddd',
-                  borderRadius: '8px',
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
-                }}
-              />
-            </div>
-          )}
+
         </main>
       </div>
     </div>
