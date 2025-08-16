@@ -20,9 +20,10 @@ const BaseConversionPage = ({
   const [convertedImage, setConvertedImage] = useState(null);
   const [conversionResult, setConversionResult] = useState(null);
 
-  const AZURE_FUNCTION_URL = 'https://quarksivof-hsbqfddpf4e5a7gj.canadacentral-01.azurewebsites.net/api/convert/jpg-to-png';
+  // URL dinámica basada en los formatos
+  const BASE_URL = 'https://quarksivof-hsbqfddpf4e5a7gj.canadacentral-01.azurewebsites.net/api/convert';
+  const AZURE_FUNCTION_URL = `${BASE_URL}/${fromFormat}-to-${toFormat}`;
 
-  // Usar useCallback para evitar re-renders innecesarios
   const handleFileChange = useCallback((newFile) => {
     console.log('📁 Archivo seleccionado:', newFile?.name);
     setFile(newFile);
@@ -58,6 +59,7 @@ const BaseConversionPage = ({
 
       console.log('📤 Enviando archivo:', file.name);
       console.log('📦 Tamaño:', (file.size / 1024 / 1024).toFixed(2), 'MB');
+      console.log('🔗 URL:', AZURE_FUNCTION_URL);
       console.log('⚙️ Opciones:', selectedOptions);
 
       const response = await fetch(AZURE_FUNCTION_URL, {
@@ -89,12 +91,13 @@ const BaseConversionPage = ({
       });
 
       if (result.success && result.image) {
-        // Validación básica
-        if (!result.image.startsWith('data:image/png;base64,')) {
-          throw new Error('Formato de respuesta inválido - no es data URL PNG');
+        // Validación dinámica del formato
+        const expectedDataUrl = `data:image/${toFormat};base64,`;
+        if (!result.image.startsWith(expectedDataUrl)) {
+          throw new Error(`Formato de respuesta inválido - esperado: ${toFormat.toUpperCase()}`);
         }
         
-        console.log('🖼️ Imagen PNG recibida correctamente');
+        console.log(`🖼️ Imagen ${toFormat.toUpperCase()} recibida correctamente`);
         setConvertedImage(result.image);
         setConversionResult({
           message: result.message,
@@ -129,7 +132,6 @@ const BaseConversionPage = ({
     try {
       console.log('🔍 Iniciando descarga...');
       
-      // Método con Blob
       const base64Data = convertedImage.split(',')[1];
       const byteCharacters = atob(base64Data);
       const byteNumbers = new Array(byteCharacters.length);
@@ -139,13 +141,13 @@ const BaseConversionPage = ({
       }
       
       const byteArray = new Uint8Array(byteNumbers);
-      const blob = new Blob([byteArray], { type: 'image/png' });
+      const blob = new Blob([byteArray], { type: `image/${toFormat}` });
       
       const url = URL.createObjectURL(blob);
       
       const link = document.createElement('a');
       link.href = url;
-      link.download = `${file.name.split('.')[0]}_converted.png`;
+      link.download = `${file.name.split('.')[0]}_converted.${toFormat}`;
       document.body.appendChild(link);
       link.click();
       
@@ -203,8 +205,6 @@ const BaseConversionPage = ({
             isFileValid={isFileValid}
           />
 
-
-
           <div className="action-buttons">
             <button 
               className={`convert-btn ${isFileValid && !isConverting ? 'active' : 'disabled'}`}
@@ -219,7 +219,7 @@ const BaseConversionPage = ({
               onClick={handleDownload}
               disabled={!convertedImage}
             >
-              📥 Descargar PNG
+              📥 Descargar {toFormat.toUpperCase()}
             </button>
 
             {(file || convertedImage) && (
@@ -231,8 +231,6 @@ const BaseConversionPage = ({
               </button>
             )}
           </div>
-
-
         </main>
       </div>
     </div>

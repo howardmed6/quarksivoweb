@@ -3,9 +3,8 @@ import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import reloadIcon from "../assets/icons/reload.svg";
 import optimizeIcon from "../assets/icons/optimize.svg";
 import qualityIcon from "../assets/icons/quality.svg";
-import noiseIcon from "../assets/icons/noise.svg";
 
-const JpgToPngPage = () => {
+const PngToJpgPage = () => {
   const conversionOptions = [
     {
       id: 'optimize-size',
@@ -16,25 +15,20 @@ const JpgToPngPage = () => {
       id: 'improve-quality',
       icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />,
       label: 'Mejorar calidad'
-    },
-    {
-      id: 'reduce-noise',
-      icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />,
-      label: 'Reducir ruido'
     }
   ];
 
   return (
     <BaseConversionPage
-      title="JPG a PNG"
+      title="PNG a JPG"
       icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
-      fromFormat="jpg"
-      toFormat="png"
-      acceptedTypes={['jpg', 'jpeg']}
+      fromFormat="png"
+      toFormat="jpg"
+      acceptedTypes={['png']}
       conversionOptions={conversionOptions}
-      comboType="combo2"
+      comboType="combo3"
     />
   );
 };
 
-export default JpgToPngPage;
+export default PngToJpgPage;
