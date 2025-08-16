@@ -18,6 +18,7 @@ const BaseConversionPage = ({
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [isConverting, setIsConverting] = useState(false);
   const [convertedImage, setConvertedImage] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [conversionResult, setConversionResult] = useState(null);
 
   // URL dinámica basada en los formatos

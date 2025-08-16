@@ -3,15 +3,18 @@ import TopBanner from './components/TopBanner';
 import MainHeader from './components/MainHeader';
 import Footer from './components/Footer';
 
-// Importar páginas
-import HomePage from './pages/HomePage';
-import BestsellersPage from './pages/BestsellersPage';
-import ArchivoPage from './pages/ArchivoPage';
-import ColeccionesPage from './pages/ColeccionesPage';
-import NosotrosPage from './pages/NosotrosPage';
-import OfertasPage from './pages/OfertasPage';
-import BlogPage from './pages/BlogPage';
-import JpgToPngPage from './pages/JpgToPngPage';
+// Importar páginas directamente con destructuring
+import {
+  HomePage,
+  BestsellersPage,
+  ArchivoPage,
+  ColeccionesPage,
+  NosotrosPage,
+  OfertasPage,
+  BlogPage,
+  JpgToPngPage,
+  PngToJpgPage
+} from './utils/pageImports';
 
 // Importar estilos globales
 import './styles/globals.css';
@@ -44,7 +47,7 @@ const App = () => {
       case 'ofertas': return <OfertasPage />;
       case 'blog': return <BlogPage />;
       case 'jpg-to-png': return <JpgToPngPage />;
-      // Aquí puedes agregar más páginas de conversión
+      case 'png-to-jpg': return <PngToJpgPage />;
       default: return <HomePage setCurrentPage={setCurrentPage} />;
     }
   };
