@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import FileUploader from './FileUploader.js';
 import Sidebar from './Sidebar.js';
 import { relatedToolsCombos } from './relatedToolsData.js';
@@ -22,8 +22,30 @@ const BaseConversionPage = ({
 
   const AZURE_FUNCTION_URL = 'https://quarksivof-hsbqfddpf4e5a7gj.canadacentral-01.azurewebsites.net/api/convert/jpg-to-png';
 
+  // Usar useCallback para evitar re-renders innecesarios
+  const handleFileChange = useCallback((newFile) => {
+    console.log('📁 Archivo seleccionado:', newFile?.name);
+    setFile(newFile);
+  }, []);
+
+  const handleFileValidation = useCallback((isValid) => {
+    console.log('✅ Validación archivo:', isValid);
+    setIsFileValid(isValid);
+  }, []);
+
+  const handleOptionToggle = useCallback((optionId) => {
+    setSelectedOptions(prev =>
+      prev.includes(optionId)
+        ? prev.filter(id => id !== optionId)
+        : [...prev, optionId]
+    );
+  }, []);
+
   const handleConvert = async () => {
-    if (!isFileValid || !file) return;
+    if (!isFileValid || !file) {
+      console.warn('⚠️ No se puede convertir: archivo inválido o no seleccionado');
+      return;
+    }
 
     setIsConverting(true);
     setConvertedImage(null);
@@ -36,40 +58,56 @@ const BaseConversionPage = ({
 
       console.log('📤 Enviando archivo:', file.name);
       console.log('📦 Tamaño:', (file.size / 1024 / 1024).toFixed(2), 'MB');
+      console.log('⚙️ Opciones:', selectedOptions);
 
       const response = await fetch(AZURE_FUNCTION_URL, {
         method: 'POST',
         body: formData,
       });
 
-      const result = await response.json();
       console.log('📥 Respuesta recibida:', response.status);
 
       if (!response.ok) {
-        throw new Error(result.error || `Error HTTP: ${response.status}`);
+        const errorText = await response.text();
+        console.error('❌ Error response:', errorText);
+        
+        let errorData;
+        try {
+          errorData = JSON.parse(errorText);
+        } catch {
+          errorData = { error: errorText || `Error HTTP ${response.status}` };
+        }
+        
+        throw new Error(errorData.error || `Error HTTP: ${response.status}`);
       }
 
+      const result = await response.json();
+      console.log('📄 Respuesta exitosa:', {
+        success: result.success,
+        hasImage: !!result.image,
+        imageLength: result.image?.length
+      });
+
       if (result.success && result.image) {
-        console.log('🖼️ Imagen recibida, longitud:', result.image.length);
-        
         // Validación básica
-        if (result.image.startsWith('data:image/')) {
-          setConvertedImage(result.image);
-          setConversionResult({
-            message: result.message,
-            originalSize: result.originalSize || 0,
-            processedSize: result.processedSize || 0,
-            appliedOptions: result.appliedOptions || [],
-            processingTime: result.processingTime || 0,
-            compressionRatio: result.originalSize && result.processedSize 
-              ? ((result.originalSize - result.processedSize) / result.originalSize * 100).toFixed(1)
-              : '0'
-          });
-          
-          console.log('✅ Conversión exitosa');
-        } else {
-          throw new Error('Formato de imagen inválido recibido');
+        if (!result.image.startsWith('data:image/png;base64,')) {
+          throw new Error('Formato de respuesta inválido - no es data URL PNG');
         }
+        
+        console.log('🖼️ Imagen PNG recibida correctamente');
+        setConvertedImage(result.image);
+        setConversionResult({
+          message: result.message,
+          originalSize: result.originalSize || 0,
+          processedSize: result.processedSize || 0,
+          appliedOptions: result.appliedOptions || [],
+          processingTime: result.processingTime || 0,
+          compressionRatio: result.originalSize && result.processedSize 
+            ? ((result.originalSize - result.processedSize) / result.originalSize * 100).toFixed(1)
+            : '0'
+        });
+        
+        console.log('✅ Conversión exitosa');
       } else {
         throw new Error(result.error || 'No se recibió imagen convertida');
       }
@@ -83,12 +121,15 @@ const BaseConversionPage = ({
   };
 
   const handleDownload = () => {
-    if (!convertedImage) return;
+    if (!convertedImage) {
+      console.warn('⚠️ No hay imagen para descargar');
+      return;
+    }
 
     try {
       console.log('🔍 Iniciando descarga...');
       
-      // Método mejorado usando Blob
+      // Método con Blob
       const base64Data = convertedImage.split(',')[1];
       const byteCharacters = atob(base64Data);
       const byteNumbers = new Array(byteCharacters.length);
@@ -100,17 +141,14 @@ const BaseConversionPage = ({
       const byteArray = new Uint8Array(byteNumbers);
       const blob = new Blob([byteArray], { type: 'image/png' });
       
-      // Crear URL temporal
       const url = URL.createObjectURL(blob);
       
-      // Crear y ejecutar descarga
       const link = document.createElement('a');
       link.href = url;
       link.download = `${file.name.split('.')[0]}_converted.png`;
       document.body.appendChild(link);
       link.click();
       
-      // Limpiar
       document.body.removeChild(link);
       URL.revokeObjectURL(url);
       
@@ -118,40 +156,22 @@ const BaseConversionPage = ({
       
     } catch (error) {
       console.error('❌ Error en descarga:', error);
-      
-      // Método de respaldo
-      try {
-        const link = document.createElement('a');
-        link.href = convertedImage;
-        link.download = `${file.name.split('.')[0]}_converted.png`;
-        link.click();
-        console.log('✅ Descarga de respaldo ejecutada');
-      } catch (fallbackError) {
-        console.error('❌ Error en descarga de respaldo:', fallbackError);
-        alert('Error al descargar el archivo');
-      }
+      alert('Error al descargar el archivo. Intenta de nuevo.');
     }
   };
 
-  const toggleOption = (optionId) => {
-    setSelectedOptions(prev =>
-      prev.includes(optionId)
-        ? prev.filter(id => id !== optionId)
-        : [...prev, optionId]
-    );
-  };
-
-  const handleToolNavigation = (route) => {
+  const handleToolNavigation = useCallback((route) => {
     console.log(`Navegando a: ${route}`);
-  };
+  }, []);
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
+    console.log('🔄 Reseteando componente');
     setFile(null);
     setIsFileValid(false);
     setSelectedOptions([]);
     setConvertedImage(null);
     setConversionResult(null);
-  };
+  }, []);
 
   return (
     <div className="conversion-page">
@@ -176,9 +196,9 @@ const BaseConversionPage = ({
             acceptedTypes={acceptedTypes}
             conversionOptions={conversionOptions}
             selectedOptions={selectedOptions}
-            onFileChange={setFile}
-            onFileValidation={setIsFileValid}
-            onOptionToggle={toggleOption}
+            onFileChange={handleFileChange}
+            onFileValidation={handleFileValidation}
+            onOptionToggle={handleOptionToggle}
             file={file}
             isFileValid={isFileValid}
           />
