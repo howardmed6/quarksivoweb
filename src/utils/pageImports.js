@@ -10,6 +10,8 @@ import OfertasPage from '../pages/OfertasPage';
 import BlogPage from '../pages/BlogPage';
 import JpgToPngPage from '../pages/JpgToPngPage';
 import PngToJpgPage from '../pages/PngToJpgPage';
+import WebpToJpgPage from '../pages/WebpToJpgPage';
+
 
 // Exportamos todas las páginas como un objeto
 export const pages = {
@@ -21,7 +23,8 @@ export const pages = {
   OfertasPage,
   BlogPage,
   JpgToPngPage,
-  PngToJpgPage
+  PngToJpgPage,
+  WebpToJpgPage
 };
 
 // También exportamos individualmente por si prefieres usarlas así
@@ -34,5 +37,6 @@ export {
   OfertasPage,
   BlogPage,
   JpgToPngPage,
-  PngToJpgPage
+  PngToJpgPage,
+  WebpToJpgPage
 };

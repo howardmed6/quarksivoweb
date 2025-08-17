@@ -13,7 +13,8 @@ import {
   OfertasPage,
   BlogPage,
   JpgToPngPage,
-  PngToJpgPage
+  PngToJpgPage,
+  WebpToJpgPage
 } from './utils/pageImports';
 
 // Importar estilos globales
@@ -48,6 +49,7 @@ const App = () => {
       case 'blog': return <BlogPage />;
       case 'jpg-to-png': return <JpgToPngPage />;
       case 'png-to-jpg': return <PngToJpgPage />;
+      case 'webp-to-jpg': return <WebpToJpgPage />;
       default: return <HomePage setCurrentPage={setCurrentPage} />;
     }
   };
