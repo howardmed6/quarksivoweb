@@ -15,7 +15,7 @@ const FileUploader = ({
   const [uploadProgress, setUploadProgress] = useState(0);
   const [isUploading, setIsUploading] = useState(false);
 
-  const validateFile = (file) => {
+  const validateFile = useCallback((file) => {
     if (!file) return false;
     const fileType = file.type.toLowerCase();
     const fileName = file.name.toLowerCase();
@@ -23,9 +23,9 @@ const FileUploader = ({
     return acceptedTypes.some(type => 
       fileType.includes(type) || fileName.endsWith(`.${type}`)
     );
-  };
+  }, [acceptedTypes]);
 
-  const simulateUpload = (file) => {
+  const simulateUpload = useCallback((file) => {
     setIsUploading(true);
     setUploadProgress(0);
     
@@ -40,15 +40,16 @@ const FileUploader = ({
         return prev + 10;
       });
     }, 100);
-  };
+  }, [onFileValidation, validateFile]);
 
-  const handleFiles = (files) => {
+  // Memoizamos handleFiles para que su referencia sea estable
+  const handleFiles = useCallback((files) => {
     if (files && files[0]) {
       const selectedFile = files[0];
       onFileChange(selectedFile);
       simulateUpload(selectedFile);
     }
-  };
+  }, [onFileChange, simulateUpload]);
 
   const handleDrag = useCallback((e) => {
     e.preventDefault();
@@ -68,7 +69,7 @@ const FileUploader = ({
     if (e.dataTransfer.files && e.dataTransfer.files[0]) {
       handleFiles(e.dataTransfer.files);
     }
-  }, []);
+  }, [handleFiles]);
 
   const handleFileInput = (e) => {
     if (e.target.files) {
