@@ -22,7 +22,7 @@ const BaseConversionPage = ({
   const [conversionResult, setConversionResult] = useState(null);
 
   // URL dinámica basada en los formatos
-  const BASE_URL = 'https://quarksivof-hsbqfddpf4e5a7gj.canadacentral-01.azurewebsites.net/api/convert';
+  const BASE_URL = 'https://quarksivo-a4fuc8a0grc3bjer.eastus2-01.azurewebsites.net/api/convert';
   const AZURE_FUNCTION_URL = `${BASE_URL}/${fromFormat}-to-${toFormat}`;
 
   const handleFileChange = useCallback((newFile) => {
