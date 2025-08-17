@@ -8,10 +8,19 @@ import ColeccionesPage from '../pages/ColeccionesPage';
 import NosotrosPage from '../pages/NosotrosPage';
 import OfertasPage from '../pages/OfertasPage';
 import BlogPage from '../pages/BlogPage';
+
+// Páginas de conversión existentes
 import JpgToPngPage from '../pages/JpgToPngPage';
 import PngToJpgPage from '../pages/PngToJpgPage';
 import WebpToJpgPage from '../pages/WebpToJpgPage';
 
+// Nuevas páginas de conversión
+import JpgToWebpPage from '../pages/JpgToWebpPage';
+import PngToWebpPage from '../pages/PngToWebpPage';
+import WebpToPngPage from '../pages/WebpToPngPage';
+import AvifToJpgPage from '../pages/AvifToJpgPage';
+import JpgToAvifPage from '../pages/JpgToAvifPage';
+import PngToAvifPage from '../pages/PngToAvifPage';
 
 // Exportamos todas las páginas como un objeto
 export const pages = {
@@ -24,7 +33,13 @@ export const pages = {
   BlogPage,
   JpgToPngPage,
   PngToJpgPage,
-  WebpToJpgPage
+  WebpToJpgPage,
+  JpgToWebpPage,
+  PngToWebpPage,
+  WebpToPngPage,
+  AvifToJpgPage,
+  JpgToAvifPage,
+  PngToAvifPage
 };
 
 // También exportamos individualmente por si prefieres usarlas así
@@ -38,5 +53,11 @@ export {
   BlogPage,
   JpgToPngPage,
   PngToJpgPage,
-  WebpToJpgPage
+  WebpToJpgPage,
+  JpgToWebpPage,
+  PngToWebpPage,
+  WebpToPngPage,
+  AvifToJpgPage,
+  JpgToAvifPage,
+  PngToAvifPage
 };

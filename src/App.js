@@ -14,7 +14,13 @@ import {
   BlogPage,
   JpgToPngPage,
   PngToJpgPage,
-  WebpToJpgPage
+  WebpToJpgPage,
+  JpgToWebpPage,
+  PngToWebpPage,
+  WebpToPngPage,
+  AvifToJpgPage,
+  JpgToAvifPage,
+  PngToAvifPage
 } from './utils/pageImports';
 
 // Importar estilos globales
@@ -47,9 +53,22 @@ const App = () => {
       case 'nosotros': return <NosotrosPage />;
       case 'ofertas': return <OfertasPage />;
       case 'blog': return <BlogPage />;
+      
+      // Conversiones existentes
       case 'jpg-to-png': return <JpgToPngPage />;
       case 'png-to-jpg': return <PngToJpgPage />;
       case 'webp-to-jpg': return <WebpToJpgPage />;
+      
+      // Nuevas conversiones WEBP
+      case 'jpg-to-webp': return <JpgToWebpPage />;
+      case 'png-to-webp': return <PngToWebpPage />;
+      case 'webp-to-png': return <WebpToPngPage />;
+      
+      // Nuevas conversiones AVIF
+      case 'avif-to-jpg': return <AvifToJpgPage />;
+      case 'jpg-to-avif': return <JpgToAvifPage />;
+      case 'png-to-avif': return <PngToAvifPage />;
+      
       default: return <HomePage setCurrentPage={setCurrentPage} />;
     }
   };
