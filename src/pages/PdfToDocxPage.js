@@ -1,26 +1,26 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-//import { reloadIcon, layoutIcon, editIcon, ocrIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
-const PDFToDocxPage = () => {
+const PdfToDocxPage = () => {
   const conversionOptions = [
-    { 
-      id: 'preserve-layout', 
-      icon: <img src={layoutIcon} alt="layout" width={24} height={24} />, 
-      label: 'Conservar diseño original' 
-    },
-    { 
-      id: 'editable-text', 
-      icon: <img src={editIcon} alt="editable" width={24} height={24} />, 
-      label: 'Texto editable completo' 
-    },
-    { 
-      id: 'ocr-scan', 
-      icon: <img src={ocrIcon} alt="ocr" width={24} height={24} />, 
-      label: 'Reconocimiento OCR (documentos escaneados)' 
-    }
+    // { 
+    //   id: 'preserve-layout', 
+    //   icon: <img src={layoutIcon} alt="layout" width={24} height={24} />, 
+    //   label: 'Conservar diseño original' 
+    // },
+    // { 
+    //   id: 'editable-text', 
+    //   icon: <img src={editIcon} alt="editable" width={24} height={24} />, 
+    //   label: 'Texto editable completo' 
+    // },
+    // { 
+    //   id: 'ocr-scan', 
+    //   icon: <img src={ocrIcon} alt="ocr" width={24} height={24} />, 
+    //   label: 'Reconocimiento OCR (documentos escaneados)' 
+    // }
   ];
 
   useEffect(() => {
@@ -119,4 +119,4 @@ const PDFToDocxPage = () => {
   );
 };
 
-export default PDFToDocxPage;
+export default PdfToDocxPage;

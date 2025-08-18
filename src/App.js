@@ -16,8 +16,7 @@ import {
   BlogPage,
   
   // Páginas de conversión de documentos
-  DocToPdfPage,
-  // PdfToDocxPage, // No existe aún
+  PdfToDocxPage, 
   PdfToOdtPage,
   PdfToRtfPage,
   PdfToTxtPage,
@@ -61,8 +60,7 @@ const App = () => {
             <Route path="/blog" component={BlogPage} />
             
             {/* Conversiones de documentos */}
-            <Route path="/document/docx-to-pdf" component={DocToPdfPage} />
-            {/* <Route path="/document/pdf-to-docx" component={PdfToDocxPage} /> */}
+            <Route path="/document/pdf-to-docx" component={PdfToDocxPage} /> 
             <Route path="/document/pdf-to-odt" component={PdfToOdtPage} />
             <Route path="/document/pdf-to-rtf" component={PdfToRtfPage} />
             <Route path="/document/pdf-to-txt" component={PdfToTxtPage} />

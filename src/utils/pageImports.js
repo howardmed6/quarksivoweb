@@ -10,8 +10,8 @@ import OfertasPage from '../pages/OfertasPage';
 import BlogPage from '../pages/BlogPage';
 
 // Páginas de conversión de documentos
-import DocToPdfPage from '../pages/DocToPdfPage';
-// import PdfToDocxPage from '../pages/PdfToDocxPage'; // No existe aún
+//import DocToPdfPage from '../pages/DocToPdfPage';
+import PdfToDocxPage from '../pages/PdfToDocxPage'; 
 import PdfToOdtPage from '../pages/PdfToOdtPage';
 import PdfToRtfPage from '../pages/PdfToRtfPage';
 import PdfToTxtPage from '../pages/PdfToTxtPage';
@@ -46,8 +46,8 @@ export const pages = {
   BlogPage,
   
   // Documentos
-  DocToPdfPage,
-  // PdfToDocxPage, // No existe aún
+  //DocToPdfPage,
+  PdfToDocxPage, 
   PdfToOdtPage,
   PdfToRtfPage,
   PdfToTxtPage,
@@ -81,8 +81,8 @@ export {
   BlogPage,
   
   // Documentos
-  DocToPdfPage,
-  // PdfToDocxPage, // No existe aún
+  //DocToPdfPage,
+  PdfToDocxPage, // No existe aún
   PdfToOdtPage,
   PdfToRtfPage,
   PdfToTxtPage,
