@@ -3,64 +3,46 @@ import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon } from '../utils/iconImports';
-import '../styles/pagespages.css';
+import '../styles/pagespages.css'; // o la ruta correcta a tu archivo CSS
 
 const PngToJpgPage = () => {
   const conversionOptions = [
-    { 
-      id: 'optimize-size', 
-      icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, 
-      label: 'Disminuir tamaño en lo posible' 
-    },
-    { 
-      id: 'improve-quality', 
-      icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, 
-      label: 'Mejorar calidad' 
-    }
+    { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
+    { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar calidad' }
   ];
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["SoftwareApplication", "HowTo", "FAQPage"],
+    "@type": ["SoftwareApplication","HowTo","FAQPage"],
     "name": "PNG a JPG — Convertidor Online",
     "applicationCategory": "FileConverter",
     "operatingSystem": "Web",
-    "offers": { 
-      "@type": "Offer", 
-      "price": "0", 
-      "priceCurrency": "USD" 
-    },
+    "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
     "howToSteps": [
-      { "@type": "HowToStep", "text": "Sube tu archivo PNG." },
-      { "@type": "HowToStep", "text": "Elige la opción deseada (calidad/tamaño)." },
-      { "@type": "HowToStep", "text": "Descarga el JPG." }
+      { "@type":"HowToStep","text":"Sube tu archivo PNG." },
+      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño)." },
+      { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
     "image": "https://tu-dominio.com/assets/ejemplos/png-jpg-ejemplo.jpg",
     "url": "https://tu-dominio.com/png-a-jpg",
     "mainEntity": [{
-      "@type": "Question",
-      "name": "¿Pierde calidad al convertir PNG a JPG?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "JPG usa compresión con pérdida, pero con calidad alta la diferencia es mínima."
-      }
+      "@type":"Question",
+      "name":"¿Pierde calidad al convertir PNG a JPG?",
+      "acceptedAnswer":{"@type":"Answer","text":"JPG usa compresión con pérdida, pero con calidad alta la diferencia es mínima."}
     }]
   };
 
   return (
     <div className="conversion-page-container">
+      {/* --- Head optimizado para Google --- */}
       <Helmet>
         <title>PNG a JPG — Convertidor Online Gratis</title>
-        <meta 
-          name="description" 
-          content="Convierte PNG a JPG gratis. Optimiza tamaño y mejora calidad en segundos." 
-        />
+        <meta name="description" content="Convierte PNG a JPG gratis. Optimiza tamaño y mejora calidad en segundos." />
         <link rel="canonical" href="https://tu-dominio.com/png-a-jpg" />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
+      {/* Bloque futurista SOLO para título + descripción */}
       <div className="hero-section">
         <h1 className="hero-title">Convertir PNG a JPG</h1>
         <p className="hero-description">
@@ -68,6 +50,7 @@ const PngToJpgPage = () => {
         </p>
       </div>
 
+      {/* Conversor */}
       <BaseConversionPage
         title="PNG a JPG"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
@@ -78,11 +61,9 @@ const PngToJpgPage = () => {
         comboType="combo3"
       />
 
-      <ExtraSection 
-        title="Texto de ejemplo para futura base" 
-        background="#ffffff" 
-        color="#000000"
-      >
+      {/* Sección extra (blanca) */}
+      <ExtraSection title="" background="#ffffff" color="#000000">
+        
       </ExtraSection>
     </div>
   );
