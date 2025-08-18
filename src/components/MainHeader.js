@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'wouter';
 import Logo from './Logo';
 import { NAVIGATION_ITEMS } from '../utils/constants';
 import '../styles/components.css';
 
-const MainHeader = ({ currentPage, setCurrentPage }) => {
+const MainHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location, setLocation] = useLocation();
+
+  // Get current page from location
+  const getCurrentPage = () => {
+    if (location === '/') return 'home';
+    const path = location.replace('/', '');
+    return path || 'home';
+  };
+
+  const currentPage = getCurrentPage();
 
   // Close mobile menu when page changes
   useEffect(() => {
     setIsMobileMenuOpen(false);
-  }, [currentPage]);
+  }, [location]);
 
   // Close mobile menu on window resize if desktop size
   useEffect(() => {
@@ -23,9 +34,15 @@ const MainHeader = ({ currentPage, setCurrentPage }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Handle navigation
+  const handleNavClick = (pageKey) => {
+    const route = pageKey === 'home' ? '/' : `/${pageKey}`;
+    setLocation(route);
+  };
+
   // Handle mobile menu item click
   const handleMobileNavClick = (pageKey) => {
-    setCurrentPage(pageKey);
+    handleNavClick(pageKey);
     setIsMobileMenuOpen(false);
   };
 
@@ -50,7 +67,7 @@ const MainHeader = ({ currentPage, setCurrentPage }) => {
           <div className="logo-section">
             <Logo />
             <button 
-              onClick={() => setCurrentPage('home')}
+              onClick={() => handleNavClick('home')}
               className="brand-name"
             >
               QUARKIVO
@@ -62,7 +79,7 @@ const MainHeader = ({ currentPage, setCurrentPage }) => {
             {NAVIGATION_ITEMS.map((item) => (
               <button
                 key={item.key}
-                onClick={() => setCurrentPage(item.key)}
+                onClick={() => handleNavClick(item.key)}
                 className={`nav-item ${currentPage === item.key ? 'active' : ''}`}
               >
                 {item.label}

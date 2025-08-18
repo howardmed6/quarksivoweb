@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'wouter';
 
 import TopBanner from './components/TopBanner';
 import MainHeader from './components/MainHeader';
@@ -30,47 +30,38 @@ import './styles/globals.css';
 
 const App = () => {
   return (
-    // ⚠️ QUITAR el HelmetProvider de aquí - ya está en index.js
     <Router>
-      <Helmet>
-        <title>Quarksivo</title>
-        <meta name="description" content="Herramientas y contenidos de Quarksivo." />
-        <meta name="theme-color" content="#000000" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
-      </Helmet>
-               
       <div className="app-container">
         <TopBanner />
         <MainHeader />
-                 
+        
         <main>
-          <Routes>
+          <Switch>
             {/* Páginas principales */}
-            <Route path="/" element={<HomePage />} />
-            <Route path="/bestsellers" element={<BestsellersPage />} />
-            <Route path="/archivo" element={<ArchivoPage />} />
-            <Route path="/colecciones" element={<ColeccionesPage />} />
-            <Route path="/nosotros" element={<NosotrosPage />} />
-            <Route path="/ofertas" element={<OfertasPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-                           
+            <Route path="/" component={HomePage} />
+            <Route path="/bestsellers" component={BestsellersPage} />
+            <Route path="/archivo" component={ArchivoPage} />
+            <Route path="/colecciones" component={ColeccionesPage} />
+            <Route path="/nosotros" component={NosotrosPage} />
+            <Route path="/ofertas" component={OfertasPage} />
+            <Route path="/blog" component={BlogPage} />
+            
             {/* Conversiones de imágenes */}
-            <Route path="/image/jpg-to-png" element={<JpgToPngPage />} />
-            <Route path="/image/png-to-jpg" element={<PngToJpgPage />} />
-            <Route path="/image/webp-to-jpg" element={<WebpToJpgPage />} />
-            <Route path="/image/jpg-to-webp" element={<JpgToWebpPage />} />
-            <Route path="/image/png-to-webp" element={<PngToWebpPage />} />
-            <Route path="/image/webp-to-png" element={<WebpToPngPage />} />
-            <Route path="/image/avif-to-jpg" element={<AvifToJpgPage />} />
-            <Route path="/image/jpg-to-avif" element={<JpgToAvifPage />} />
-            <Route path="/image/png-to-avif" element={<PngToAvifPage />} />
-                           
-            {/* Ruta 404 - opcional */}
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
+            <Route path="/image/jpg-to-png" component={JpgToPngPage} />
+            <Route path="/image/png-to-jpg" component={PngToJpgPage} />
+            <Route path="/image/webp-to-jpg" component={WebpToJpgPage} />
+            <Route path="/image/jpg-to-webp" component={JpgToWebpPage} />
+            <Route path="/image/png-to-webp" component={PngToWebpPage} />
+            <Route path="/image/webp-to-png" component={WebpToPngPage} />
+            <Route path="/image/avif-to-jpg" component={AvifToJpgPage} />
+            <Route path="/image/jpg-to-avif" component={JpgToAvifPage} />
+            <Route path="/image/png-to-avif" component={PngToAvifPage} />
+            
+            {/* Ruta 404 - debe ir al final */}
+            <Route component={NotFoundPage} />
+          </Switch>
         </main>
-                 
+        
         <Footer />
       </div>
     </Router>

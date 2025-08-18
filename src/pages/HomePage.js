@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, Link } from 'wouter';
 import Logo from '../components/Logo';
 import VideoBackground from '../helpers/VideoBackground';
 import ConversionGrid from '../helpers/ConversionGrid';
@@ -14,11 +14,12 @@ import '../styles/responsive.css';
 import '../styles/layout-fix.css';
 
 const HomePage = () => {
-  const navigate = useNavigate();
-
+    // eslint-disable-next-line no-unused-vars
+  const [location, setLocation] = useLocation();
+  
   const handleConversionClick = (route) => {
     console.log(`Navegando a: ${route}`);
-    navigate(route); // ← Usar React Router para navegar
+    setLocation(route); // ← Usar Wouter para navegar
   };
 
   return (
@@ -27,9 +28,13 @@ const HomePage = () => {
         <div className="home-content">
           <div className="home-header">
             <div className="home-text-section">
-              <Logo width={60} height={60} />
+              <Link href="/">
+                <Logo width={60} height={60} />
+              </Link>
               <div className="home-text">
-                <h1 className="home-title">QUARKIVO</h1>
+                <Link href="/">
+                  <h1 className="home-title">QUARKIVO</h1>
+                </Link>
                 <p className="home-subtitle">Tu archivo digital está listo</p>
               </div>
             </div>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'wouter';
 import { BANNER_MESSAGES } from '../utils/constants';
 import '../styles/components.css';
 
-const TopBanner = ({ setCurrentPage }) => {
+const TopBanner = () => {
   const [currentMessage, setCurrentMessage] = useState(0);
+    // eslint-disable-next-line no-unused-vars
+  const [location, setLocation] = useLocation();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,11 +25,9 @@ const TopBanner = ({ setCurrentPage }) => {
 
   const handleBannerClick = () => {
     const currentBanner = BANNER_MESSAGES[currentMessage];
-    if (setCurrentPage && currentBanner.route) {
-      setCurrentPage(currentBanner.route);
-    } else {
-      // Fallback si no hay setCurrentPage
+    if (currentBanner.route) {
       console.log(`Redirigiendo a: ${currentBanner.route}`);
+      setLocation(currentBanner.route);
     }
   };
 
