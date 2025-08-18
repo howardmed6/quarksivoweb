@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, openSourceIcon, libreIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const PdfToOdtPage = () => {
   const conversionOptions = [
-    { 
-      id: 'open-format', 
-      icon: <img src={openSourceIcon} alt="open source" width={24} height={24} />, 
-      label: 'Formato abierto' 
-    },
-    { 
-      id: 'libre-compat', 
-      icon: <img src={libreIcon} alt="libreoffice" width={24} height={24} />, 
-      label: 'Optimizado para LibreOffice' 
-    }
+    // { 
+    //   id: 'open-format', 
+    //   icon: <img src={openSourceIcon} alt="open source" width={24} height={24} />, 
+    //   label: 'Formato abierto' 
+    // },
+    // { 
+    //   id: 'libre-compat', 
+    //   icon: <img src={libreIcon} alt="libreoffice" width={24} height={24} />, 
+    //   label: 'Optimizado para LibreOffice' 
+    // }
   ];
 
   useEffect(() => {

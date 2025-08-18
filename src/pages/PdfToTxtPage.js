@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, formatIcon, codeIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const PdfToTxtPage = () => {
   const conversionOptions = [
-    { 
-      id: 'preserve-spacing', 
-      icon: <img src={formatIcon} alt="formato" width={24} height={24} />, 
-      label: 'Mantener saltos de línea' 
-    },
-    { 
-      id: 'minimal-formatting', 
-      icon: <img src={codeIcon} alt="simple" width={24} height={24} />, 
-      label: 'Texto plano sin formato' 
-    }
+    // { 
+    //   id: 'preserve-spacing', 
+    //   icon: <img src={formatIcon} alt="formato" width={24} height={24} />, 
+    //   label: 'Mantener saltos de línea' 
+    // },
+    // { 
+    //   id: 'minimal-formatting', 
+    //   icon: <img src={codeIcon} alt="simple" width={24} height={24} />, 
+    //   label: 'Texto plano sin formato' 
+    // }
   ];
 
   useEffect(() => {

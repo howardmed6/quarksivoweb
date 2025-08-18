@@ -1,21 +1,21 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, retroIcon, compatibilityIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const PdfToRtfPage = () => {
   const conversionOptions = [
-    { 
-      id: 'preserve-format', 
-      icon: <img src={compatibilityIcon} alt="compatibilidad" width={24} height={24} />, 
-      label: 'Mantener formato básico' 
-    },
-    { 
-      id: 'legacy-support', 
-      icon: <img src={retroIcon} alt="compatibilidad" width={24} height={24} />, 
-      label: 'Compatibilidad con sistemas antiguos' 
-    }
+    // { 
+    //   id: 'preserve-format', 
+    //   icon: <img src={compatibilityIcon} alt="compatibilidad" width={24} height={24} />, 
+    //   label: 'Mantener formato básico' 
+    // },
+    // { 
+    //   id: 'legacy-support', 
+    //   icon: <img src={retroIcon} alt="compatibilidad" width={24} height={24} />, 
+    //   label: 'Compatibilidad con sistemas antiguos' 
+    // }
   ];
 
   useEffect(() => {

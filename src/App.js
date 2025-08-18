@@ -14,6 +14,15 @@ import {
   NosotrosPage,
   OfertasPage,
   BlogPage,
+  
+  // Páginas de conversión de documentos
+  DocToPdfPage,
+  // PdfToDocxPage, // No existe aún
+  PdfToOdtPage,
+  PdfToRtfPage,
+  PdfToTxtPage,
+  
+  // Páginas de conversión de imágenes
   JpgToPngPage,
   PngToJpgPage,
   WebpToJpgPage,
@@ -23,6 +32,11 @@ import {
   AvifToJpgPage,
   JpgToAvifPage,
   PngToAvifPage,
+  HeicToPngPage,
+  
+  // Páginas de conversión de video
+  GifToMp4Page,
+  
   NotFoundPage
 } from './utils/pageImports';
 
@@ -46,6 +60,13 @@ const App = () => {
             <Route path="/ofertas" component={OfertasPage} />
             <Route path="/blog" component={BlogPage} />
             
+            {/* Conversiones de documentos */}
+            <Route path="/document/docx-to-pdf" component={DocToPdfPage} />
+            {/* <Route path="/document/pdf-to-docx" component={PdfToDocxPage} /> */}
+            <Route path="/document/pdf-to-odt" component={PdfToOdtPage} />
+            <Route path="/document/pdf-to-rtf" component={PdfToRtfPage} />
+            <Route path="/document/pdf-to-txt" component={PdfToTxtPage} />
+            
             {/* Conversiones de imágenes */}
             <Route path="/image/jpg-to-png" component={JpgToPngPage} />
             <Route path="/image/png-to-jpg" component={PngToJpgPage} />
@@ -56,6 +77,10 @@ const App = () => {
             <Route path="/image/avif-to-jpg" component={AvifToJpgPage} />
             <Route path="/image/jpg-to-avif" component={JpgToAvifPage} />
             <Route path="/image/png-to-avif" component={PngToAvifPage} />
+            <Route path="/image/heic-to-png" component={HeicToPngPage} />
+            
+            {/* Conversiones de video */}
+            <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
             
             {/* Ruta 404 - debe ir al final */}
             <Route component={NotFoundPage} />

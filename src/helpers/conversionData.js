@@ -38,6 +38,7 @@ export const conversionOptions = [
   { id: 36, title: 'CSV a Excel', icon: '📊', route: '/document/csv-to-excel', category: 'documents' },
   { id: 37, title: 'JSON a CSV', icon: '📋', route: '/document/json-to-csv', category: 'documents' },
   { id: 38, title: 'CSV a JSON', icon: '📋', route: '/document/csv-to-json', category: 'documents' },
+  { id: 39, title: 'DOCX a PDF', icon: '📄', route: '/document/docx-to-pdf', category: 'documents' },
 
   // 🖼️ Imágenes (IDs 139-161)
   { id: 139, title: 'JPG a PDF', icon: '🖼️', route: '/document/jpg-to-pdf', category: 'images' },
@@ -63,6 +64,7 @@ export const conversionOptions = [
   { id: 159, title: 'Firmar imagen', icon: '✍️', route: '/image/sign-image', category: 'images' },
   { id: 160, title: 'Texto a imagen', icon: '🖼️', route: '/image/text-to-image', category: 'images' },
   { id: 161, title: 'OCR: Imagen a texto', icon: '👁️', route: '/image/ocr-image-to-text', category: 'images' },
+{ id: 162, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
 
   // 🎬 Videos (IDs 262-264)
   { id: 262, title: 'MP4 a GIF', icon: '🎬', route: '/video/mp4-to-gif', category: 'videos' },
@@ -127,6 +129,8 @@ const popularityOrder = [
   262, // MP4 a GIF
   8,   // TXT a PDF
   9,   // PDF a TXT
+  39,
+  162,
   // ... el resto en orden del array original
 ];
 

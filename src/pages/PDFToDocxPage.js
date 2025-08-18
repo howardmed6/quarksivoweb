@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, layoutIcon, editIcon, ocrIcon } from '../utils/iconImports';
+//import { reloadIcon, layoutIcon, editIcon, ocrIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const PDFToDocxPage = () => {
