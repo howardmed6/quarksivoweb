@@ -1,16 +1,21 @@
 import React from 'react';
 
 const ConversionCard = ({ option, index, onClick }) => {
-  const getColorClass = (index, priority) => {
-    const colors = ['blue', 'green', 'orange', 'black'];
-    if (priority === 'top') return 'top-priority';
-    return colors[index % 4];
+  const getCategoryClass = (category) => {
+    const categoryClasses = {
+      documents: 'documents-priority',
+      images: 'images-priority', 
+      videos: 'videos-priority',
+      audio: 'audio-priority',
+      others: 'others-priority'
+    };
+    return categoryClasses[category] || 'documents-priority';
   };
 
   return (
     <button 
       onClick={onClick}
-      className={`conversion-card ${getColorClass(index, option.priority)}`}
+      className={`conversion-card ${getCategoryClass(option.category)}`}
     >
       <div className="card-icon">{option.icon}</div>
       <h3 className="card-title">{option.title}</h3>

@@ -42,7 +42,33 @@
   line-height: 1.3;
 }
 
-/* Colores para cada tipo */
+/* Colores por categorías */
+.conversion-card.documents-priority {
+  background: linear-gradient(135deg, #4A90E2, #5BA0F2);
+  color: white;
+}
+
+.conversion-card.images-priority {
+  background: linear-gradient(135deg, #32CD32, #50E850);
+  color: white;
+}
+
+.conversion-card.videos-priority {
+  background: linear-gradient(135deg, #FF4500, #FF6B35);
+  color: white;
+}
+
+.conversion-card.audio-priority {
+  background: linear-gradient(135deg, #8A2BE2, #9932CC);
+  color: white;
+}
+
+.conversion-card.others-priority {
+  background: linear-gradient(135deg, #666, #888);
+  color: white;
+}
+
+/* Mantener compatibilidad con clases anteriores */
 .conversion-card.top-priority {
   background: linear-gradient(135deg, #FF6B35, #FF8A5B);
   color: white;

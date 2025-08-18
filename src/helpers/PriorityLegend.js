@@ -2,10 +2,11 @@ import React from 'react';
 
 const PriorityLegend = () => {
   const legendItems = [
-    { label: 'Alfa', className: 'top-priority-dot' },
-    { label: 'Beta', className: 'high-priority-dot' },
-    { label: 'Omega', className: 'medium-priority-dot' },
-    { label: 'Mega', className: 'low-priority-dot' }
+    { label: 'Documentos', className: 'documents-dot', color: 'blue' },
+    { label: 'Imágenes', className: 'images-dot', color: 'green' },
+    { label: 'Videos', className: 'videos-dot', color: 'orange' },
+    { label: 'Audio', className: 'audio-dot', color: 'purple' },
+    { label: 'Otros', className: 'others-dot', color: 'gray' }
   ];
 
   return (
