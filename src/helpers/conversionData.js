@@ -65,6 +65,11 @@ export const conversionOptions = [
   { id: 160, title: 'Texto a imagen', icon: '🖼️', route: '/image/text-to-image', category: 'images' },
   { id: 161, title: 'OCR: Imagen a texto', icon: '👁️', route: '/image/ocr-image-to-text', category: 'images' },
 { id: 162, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
+{ id: 163, title: 'SVG a WebP', icon: '🔄', route: '/image/svg-to-webp', category: 'images' },
+{ id: 164, title: 'SVG a PNG', icon: '🔄', route: '/image/svg-to-png', category: 'images' },
+{ id: 165, title: 'SVG a JPG', icon: '🔄', route: '/image/svg-to-jpg', category: 'images' },
+{ id: 166, title: 'SVG a JPEG', icon: '🔄', route: '/image/svg-to-jpeg', category: 'images' },
+
 
   // 🎬 Videos (IDs 262-264)
   { id: 262, title: 'MP4 a GIF', icon: '🎬', route: '/video/mp4-to-gif', category: 'videos' },
@@ -131,6 +136,10 @@ const popularityOrder = [
   9,   // PDF a TXT
   39,
   162,
+  163,
+  164,
+  165,
+  166,
   // ... el resto en orden del array original
 ];
 
