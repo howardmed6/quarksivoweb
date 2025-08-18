@@ -16,6 +16,7 @@ import {
   BlogPage,
   
   // Páginas de conversión de documentos
+  DocxToPdfPage,  
   PdfToDocxPage, 
   PdfToOdtPage,
   PdfToRtfPage,
@@ -32,6 +33,10 @@ import {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+  SvgToWebpPage,
+  SvgToPngPage, 
+  SvgToJpgPage,
+  SvgToJpegPage,
   
   // Páginas de conversión de video
   GifToMp4Page,
@@ -60,6 +65,7 @@ const App = () => {
             <Route path="/blog" component={BlogPage} />
             
             {/* Conversiones de documentos */}
+            <Route path="/document/docx-to-pdf" component={DocxToPdfPage} /> 
             <Route path="/document/pdf-to-docx" component={PdfToDocxPage} /> 
             <Route path="/document/pdf-to-odt" component={PdfToOdtPage} />
             <Route path="/document/pdf-to-rtf" component={PdfToRtfPage} />
@@ -76,6 +82,10 @@ const App = () => {
             <Route path="/image/jpg-to-avif" component={JpgToAvifPage} />
             <Route path="/image/png-to-avif" component={PngToAvifPage} />
             <Route path="/image/heic-to-png" component={HeicToPngPage} />
+            <Route path="/image/svg-to-webp" component={SvgToWebpPage} />
+            <Route path="/image/svg-to-png" component={SvgToPngPage} />
+            <Route path="/image/svg-to-jpg" component={SvgToJpgPage} />
+            <Route path="/image/svg-to-jpeg" component={SvgToJpegPage} />
             
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />

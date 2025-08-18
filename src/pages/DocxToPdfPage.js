@@ -1,26 +1,26 @@
 import React, { useEffect } from 'react';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, qualityIcon, optimizeIcon, lockIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const DocxToPdfPage = () => {
   const conversionOptions = [
-    { 
-      id: 'high-quality', 
-      icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, 
-      label: 'Máxima calidad de impresión' 
-    },
-    { 
-      id: 'compress-pdf', 
-      icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, 
-      label: 'Comprimir para compartir' 
-    },
-    { 
-      id: 'password-protect', 
-      icon: <img src={lockIcon} alt="proteger" width={24} height={24} />, 
-      label: 'Proteger con contraseña' 
-    }
+    // { 
+    //   id: 'high-quality', 
+    //   icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, 
+    //   label: 'Máxima calidad de impresión' 
+    // },
+    // { 
+    //   id: 'compress-pdf', 
+    //   icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, 
+    //   label: 'Comprimir para compartir' 
+    // },
+    // { 
+    //   id: 'password-protect', 
+    //   icon: <img src={lockIcon} alt="proteger" width={24} height={24} />, 
+    //   label: 'Proteger con contraseña' 
+    // }
   ];
 
   useEffect(() => {

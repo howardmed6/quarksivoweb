@@ -10,7 +10,7 @@ import OfertasPage from '../pages/OfertasPage';
 import BlogPage from '../pages/BlogPage';
 
 // Páginas de conversión de documentos
-//import DocToPdfPage from '../pages/DocToPdfPage';
+import DocxToPdfPage from '../pages/DocxToPdfPage';
 import PdfToDocxPage from '../pages/PdfToDocxPage'; 
 import PdfToOdtPage from '../pages/PdfToOdtPage';
 import PdfToRtfPage from '../pages/PdfToRtfPage';
@@ -29,7 +29,10 @@ import AvifToJpgPage from '../pages/AvifToJpgPage';
 import JpgToAvifPage from '../pages/JpgToAvifPage';
 import PngToAvifPage from '../pages/PngToAvifPage';
 import HeicToPngPage from '../pages/HeicToPngPage';
-
+import SvgToWebpPage from '../pages/SvgToWebpPage';
+import SvgToPngPage from '../pages/SvgToPngPage';
+import SvgToJpgPage from '../pages/SvgToJpgPage';
+import SvgToJpegPage from '../pages/SvgToJpegPage';
 // Páginas de conversión de video
 import GifToMp4Page from '../pages/GifToMp4Page';
 
@@ -46,7 +49,7 @@ export const pages = {
   BlogPage,
   
   // Documentos
-  //DocToPdfPage,
+  DocxToPdfPage,
   PdfToDocxPage, 
   PdfToOdtPage,
   PdfToRtfPage,
@@ -63,6 +66,10 @@ export const pages = {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+   SvgToWebpPage,
+  SvgToPngPage, 
+  SvgToJpgPage,
+  SvgToJpegPage,
   
   // Video
   GifToMp4Page,
@@ -81,7 +88,7 @@ export {
   BlogPage,
   
   // Documentos
-  //DocToPdfPage,
+  DocxToPdfPage,
   PdfToDocxPage, // No existe aún
   PdfToOdtPage,
   PdfToRtfPage,
@@ -98,6 +105,10 @@ export {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+   SvgToWebpPage,
+  SvgToPngPage, 
+  SvgToJpgPage,
+  SvgToJpegPage,
   
   // Video
   GifToMp4Page,
