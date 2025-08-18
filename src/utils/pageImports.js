@@ -21,6 +21,8 @@ import WebpToPngPage from '../pages/WebpToPngPage';
 import AvifToJpgPage from '../pages/AvifToJpgPage';
 import JpgToAvifPage from '../pages/JpgToAvifPage';
 import PngToAvifPage from '../pages/PngToAvifPage';
+import NotFoundPage from '../pages/NotFoundPage';
+
 
 // Exportamos todas las páginas como un objeto
 export const pages = {
@@ -39,7 +41,8 @@ export const pages = {
   WebpToPngPage,
   AvifToJpgPage,
   JpgToAvifPage,
-  PngToAvifPage
+  PngToAvifPage,
+  NotFoundPage
 };
 
 // También exportamos individualmente por si prefieres usarlas así
@@ -59,5 +62,6 @@ export {
   WebpToPngPage,
   AvifToJpgPage,
   JpgToAvifPage,
-  PngToAvifPage
+  PngToAvifPage,
+  NotFoundPage
 };

@@ -1,0 +1,45 @@
+/* ===== Estilos para páginas de conversión ===== */
+
+.conversion-page-container {
+  padding: 2rem;
+}
+
+/* Hero section con gradiente futurista */
+.hero-section {
+  background: linear-gradient(135deg, #0f0f0f, #1a1f3c, #2a0f4d);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0; /* Evita margin por defecto del h1 */
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  margin-bottom: 0; /* Evita margin por defecto del p */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .conversion-page-container {
+    padding: 1rem;
+  }
+  
+  .hero-section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  .hero-description {
+    font-size: 1rem;
+  }
+}

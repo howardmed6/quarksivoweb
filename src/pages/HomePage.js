@@ -1,22 +1,24 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Logo from '../components/Logo';
 import VideoBackground from '../helpers/VideoBackground';
 import ConversionGrid from '../helpers/ConversionGrid';
 import PriorityLegend from '../helpers/PriorityLegend';
-import FeaturesSection from '../helpers/FeaturesSection'; // ← Nueva importación
+import FeaturesSection from '../helpers/FeaturesSection';
 import { conversionOptions } from '../helpers/conversionData';
 import '../styles/pages.css';
 import '../styles/home-header.css';
 import '../styles/conversion-grid.css';
 import '../styles/priority-legend.css';
 import '../styles/responsive.css';
-import '../styles/layout-fix.css'; // ← Agregar esta línea
+import '../styles/layout-fix.css';
 
-const HomePage = ({ setCurrentPage }) => {
+const HomePage = () => {
+  const navigate = useNavigate();
+
   const handleConversionClick = (route) => {
-    // Por ahora solo mostrar en consola, después puedes crear las páginas
     console.log(`Navegando a: ${route}`);
-     setCurrentPage(route); // ← Cambiar esta línea para que funcione
+    navigate(route); // ← Usar React Router para navegar
   };
 
   return (
@@ -31,20 +33,19 @@ const HomePage = ({ setCurrentPage }) => {
                 <p className="home-subtitle">Tu archivo digital está listo</p>
               </div>
             </div>
-
+            
             <VideoBackground />
           </div>
-
+          
           <ConversionGrid
             options={conversionOptions}
             onConversionClick={handleConversionClick}
           />
-
+          
           <PriorityLegend />
         </div>
       </main>
       
-      {/* ← Aquí agregas las nuevas secciones */}
       <FeaturesSection />
     </div>
   );
