@@ -1,3 +1,4 @@
+// ========== HEIC a JPG ==========
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
@@ -5,7 +6,7 @@ import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon, noiseIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
-const AvifToJpgPage = () => {
+const HeicToJpgPage = () => {
   const conversionOptions = [
     { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
     { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar calidad' },
@@ -15,54 +16,56 @@ const AvifToJpgPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication","HowTo","FAQPage"],
-    "name": "AVIF a JPG — Convertidor Online",
+    "name": "HEIC a JPG — Convertidor Online",
     "applicationCategory": "FileConverter",
     "operatingSystem": "Web",
     "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
     "howToSteps": [
-      { "@type":"HowToStep","text":"Sube tu archivo AVIF." },
+      { "@type":"HowToStep","text":"Sube tu archivo HEIC." },
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-jpg",
+    "image": "https://tu-dominio.com/assets/ejemplos/heic-jpg-ejemplo.jpg",
+    "url": "https://tu-dominio.com/heic-a-jpg",
     "mainEntity": [{
       "@type":"Question",
-      "name":"¿Se pierde calidad al convertir AVIF a JPG?",
-      "acceptedAnswer":{"@type":"Answer","text":"Con configuración de alta calidad, la conversión mantiene excelente calidad visual para uso web."}
+      "name":"¿Por qué convertir HEIC a JPG?",
+      "acceptedAnswer":{"@type":"Answer","text":"JPG es compatible con todos los dispositivos y plataformas, mientras HEIC solo funciona en dispositivos Apple recientes."}
     }]
   };
 
   return (
     <div className="conversion-page-container">
       <Helmet>
-        <title>AVIF a JPG — Convertidor Online Gratis</title>
-        <meta name="description" content="Convierte AVIF a JPG gratis. Máxima compatibilidad web manteniendo calidad. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-jpg" />
+        <title>HEIC a JPG — Convertidor Online Gratis</title>
+        <meta name="description" content="Convierte HEIC a JPG gratis. Transforma fotos de iPhone/iPad a formato universal. Compatibilidad total con cualquier dispositivo." />
+        <link rel="canonical" href="https://tu-dominio.com/heic-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       <div className="hero-section">
-        <h1 className="hero-title">Convertir AVIF a JPG</h1>
+        <h1 className="hero-title">Convertir HEIC a JPG</h1>
         <p className="hero-description">
-          Convierte tus AVIF a JPG para máxima compatibilidad web. Mantén calidad mientras aseguras soporte universal.
+          Convierte fotos HEIC de iPhone/iPad a JPG para compatibilidad universal. Funciona en cualquier dispositivo y plataforma.
         </p>
       </div>
 
       <BaseConversionPage
-        title="AVIF a JPG"
+        title="HEIC a JPG"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
-        fromFormat="avif"
+        fromFormat="heic"
         toFormat="jpg"
-        acceptedTypes={['avif']}
+        acceptedTypes={['heic']}
         conversionOptions={conversionOptions}
         comboType="combo2"
       />
 
-      <ExtraSection title="" background="#ffffff" color="#000000">
+      <ExtraSection title="Texto de ejemplo para futura base" background="#ffffff" color="#000000">
       </ExtraSection>
     </div>
   );
 };
 
-export default AvifToJpgPage;
+export default HeicToJpgPage;
+
+
