@@ -94,7 +94,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="copyright">
-          © 2025, QUARKIVO Archivo. Todos los derechos reservados.
+          © 2025, CORQUARK Archivo. Todos los derechos reservados.
         </div>
       </div>
     </footer>

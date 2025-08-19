@@ -57,6 +57,7 @@ const WebpToPngPage = () => {
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="webp"
         toFormat="png"
+        functionType = "image"
         acceptedTypes={['webp']}
         conversionOptions={conversionOptions}
         comboType="combo2"

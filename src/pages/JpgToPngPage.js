@@ -55,6 +55,7 @@ const JpgToPngPage = () => {
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="jpg"
         toFormat="png"
+        functionType = "image"
         acceptedTypes={['jpg', 'jpeg']}
         conversionOptions={conversionOptions}
         comboType="combo2"
