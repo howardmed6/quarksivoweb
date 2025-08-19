@@ -30,6 +30,12 @@ import JpgToAvifPage from '../pages/JpgToAvifPage';
 import PngToAvifPage from '../pages/PngToAvifPage';
 import HeicToPngPage from '../pages/HeicToPngPage';
 import HeicToJpgPage from '../pages/HeicToJpgPage';
+import HeicToWebpPage from '../pages/HeicToWebpPage';
+import HeicToAvifPage from '../pages/HeicToAvifPage';
+import JpgToHeicPage from '../pages/JpgToHeicPage';
+import PngToHeicPage from '../pages/PngToHeicPage';
+import WebpToHeicPage from '../pages/WebpToHeicPage';
+import AvifToHeicPage from '../pages/AvifToHeicPage';
 
 import SvgToWebpPage from '../pages/SvgToWebpPage';
 import SvgToPngPage from '../pages/SvgToPngPage';
@@ -87,6 +93,12 @@ BmpToPngPage,
 GifToWebpPage,
 GifToJpgPage,
 GifToPngPage,
+  HeicToWebpPage,
+HeicToAvifPage,
+JpgToHeicPage,
+PngToHeicPage,
+WebpToHeicPage,
+AvifToHeicPage,
   
   // Video
   GifToMp4Page,
@@ -134,7 +146,12 @@ BmpToPngPage,
 GifToWebpPage,
 GifToJpgPage,
 GifToPngPage,
-  
+    HeicToWebpPage,
+HeicToAvifPage,
+JpgToHeicPage,
+PngToHeicPage,
+WebpToHeicPage,
+AvifToHeicPage,
   // Video
   GifToMp4Page,
   

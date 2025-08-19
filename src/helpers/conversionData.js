@@ -71,6 +71,12 @@ export const conversionOptions = [
 // { id: 165, title: 'SVG a JPG', icon: '🔄', route: '/image/svg-to-jpg', category: 'images' },
 // { id: 166, title: 'SVG a JPEG', icon: '🔄', route: '/image/svg-to-jpeg', category: 'images' },
 { id: 167, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
+{ id: 168, title: 'HEIC a WebP', icon: '🔄', route: '/image/heic-to-webp', category: 'images' },
+{ id: 169, title: 'HEIC a AVIF', icon: '🔄', route: '/image/heic-to-avif', category: 'images' },
+{ id: 170, title: 'JPG a HEIC', icon: '🔄', route: '/image/jpg-to-heic', category: 'images' },
+{ id: 171, title: 'PNG a HEIC', icon: '🔄', route: '/image/png-to-heic', category: 'images' },
+//{ id: 172, title: 'WebP a HEIC', icon: '🔄', route: '/image/webp-to-heic', category: 'images' },
+//{ id: 173, title: 'AVIF a HEIC', icon: '🔄', route: '/image/avif-to-heic', category: 'images' },
 
 
 //   // 🎬 Videos (IDs 262-264)

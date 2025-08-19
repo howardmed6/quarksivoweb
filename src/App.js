@@ -34,6 +34,12 @@ import {
   PngToAvifPage,
   HeicToPngPage,
   HeicToJpgPage,
+  HeicToWebpPage,
+HeicToAvifPage,
+JpgToHeicPage,
+PngToHeicPage,
+WebpToHeicPage,
+AvifToHeicPage,
 
   SvgToWebpPage,
   SvgToPngPage, 
@@ -103,6 +109,12 @@ const App = () => {
             <Route path="/image/gif-to-webp" component={GifToWebpPage} />
             <Route path="/image/gif-to-jpg" component={GifToJpgPage} />
             <Route path="/image/gif-to-png" component={GifToPngPage} />
+            <Route path="/image/heic-to-webp" component={HeicToWebpPage} />
+<Route path="/image/heic-to-avif" component={HeicToAvifPage} />
+<Route path="/image/jpg-to-heic" component={JpgToHeicPage} />
+<Route path="/image/png-to-heic" component={PngToHeicPage} />
+<Route path="/image/webp-to-heic" component={WebpToHeicPage} />
+<Route path="/image/avif-to-heic" component={AvifToHeicPage} />
             
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
