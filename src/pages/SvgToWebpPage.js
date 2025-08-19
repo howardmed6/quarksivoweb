@@ -59,6 +59,7 @@ const SvgToWebpPage = () => {
         fromFormat="svg"
         toFormat="webp"
         acceptedTypes={['svg']}
+        functionType = "image"
         conversionOptions={conversionOptions}
         comboType="combo2"
       />

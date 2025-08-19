@@ -9,6 +9,7 @@ const BaseConversionPage = ({
   icon,
   fromFormat,
   toFormat,
+  functionType = "documents",
   acceptedTypes,
   conversionOptions = [],
   comboType = 'combo1'
@@ -21,9 +22,9 @@ const BaseConversionPage = ({
   // eslint-disable-next-line no-unused-vars
   const [conversionResult, setConversionResult] = useState(null);
 
-  // URL dinámica basada en los formatos
-  const BASE_URL = 'https://quarksivo-a4fuc8a0grc3bjer.eastus2-01.azurewebsites.net/api/convert';
-  const AZURE_FUNCTION_URL = `${BASE_URL}/${fromFormat}-to-${toFormat}`;
+  // URL dinámica basada en functionType y los formatos
+  const BASE_URL = `https://quarksivo-a4fuc8a0grc3bjer.eastus2-01.azurewebsites.net/api/${functionType}`;
+  const AZURE_FUNCTION_URL = `${BASE_URL}/convert/${fromFormat}-to-${toFormat}`;
 
   const handleFileChange = useCallback((newFile) => {
     console.log('📁 Archivo seleccionado:', newFile?.name);
@@ -61,6 +62,7 @@ const BaseConversionPage = ({
       console.log('📤 Enviando archivo:', file.name);
       console.log('📦 Tamaño:', (file.size / 1024 / 1024).toFixed(2), 'MB');
       console.log('🔗 URL:', AZURE_FUNCTION_URL);
+      console.log('🔧 Tipo de función:', functionType);
       console.log('⚙️ Opciones:', selectedOptions);
 
       const response = await fetch(AZURE_FUNCTION_URL, {
