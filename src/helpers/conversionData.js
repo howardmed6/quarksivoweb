@@ -54,8 +54,8 @@ export const conversionOptions = [
    { id: 148, title: 'WebP a PNG', icon: '🔄', route: '/image/webp-to-png', category: 'images' },
    { id: 149, title: 'JPG a AVIF', icon: '🔄', route: '/image/jpg-to-avif', category: 'images' },
    { id: 150, title: 'PNG a AVIF', icon: '🔄', route: '/image/png-to-avif', category: 'images' },
-//   { id: 151, title: 'AVIF a JPG', icon: '🔄', route: '/image/avif-to-jpg', category: 'images' },
-//   { id: 152, title: 'HEIC a JPG', icon: '🔄', route: '/image/heic-to-jpg', category: 'images' },
+   { id: 151, title: 'AVIF a JPG', icon: '🔄', route: '/image/avif-to-jpg', category: 'images' },
+   { id: 152, title: 'HEIC a JPG', icon: '🔄', route: '/image/heic-to-jpg', category: 'images' },
 //   { id: 153, title: 'GIF a PNG', icon: '🎬', route: '/image/gif-to-png', category: 'images' },
 //   { id: 154, title: 'GIF a JPG', icon: '🎬', route: '/image/gif-to-jpg', category: 'images' },
 //   { id: 155, title: 'GIF a WebP', icon: '🎬', route: '/image/gif-to-webp', category: 'images' },
@@ -70,6 +70,7 @@ export const conversionOptions = [
 // { id: 164, title: 'SVG a PNG', icon: '🔄', route: '/image/svg-to-png', category: 'images' },
 // { id: 165, title: 'SVG a JPG', icon: '🔄', route: '/image/svg-to-jpg', category: 'images' },
 // { id: 166, title: 'SVG a JPEG', icon: '🔄', route: '/image/svg-to-jpeg', category: 'images' },
+{ id: 167, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
 
 
 //   // 🎬 Videos (IDs 262-264)

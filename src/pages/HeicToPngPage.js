@@ -55,6 +55,7 @@ const HeicToPngPage = () => {
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="heic"
         toFormat="png"
+        functionType = "image"
         acceptedTypes={['heic']}
         conversionOptions={conversionOptions}
         comboType="combo2"

@@ -29,6 +29,8 @@ import AvifToJpgPage from '../pages/AvifToJpgPage';
 import JpgToAvifPage from '../pages/JpgToAvifPage';
 import PngToAvifPage from '../pages/PngToAvifPage';
 import HeicToPngPage from '../pages/HeicToPngPage';
+import HeicToJpgPage from '../pages/HeicToJpgPage';
+
 import SvgToWebpPage from '../pages/SvgToWebpPage';
 import SvgToPngPage from '../pages/SvgToPngPage';
 import SvgToJpgPage from '../pages/SvgToJpgPage';
@@ -73,6 +75,7 @@ export const pages = {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+  HeicToJpgPage,
   SvgToWebpPage,
   SvgToPngPage, 
   SvgToJpgPage,
@@ -119,6 +122,7 @@ export {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+  HeicToJpgPage,
   SvgToWebpPage,
   SvgToPngPage, 
   SvgToJpgPage,

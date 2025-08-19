@@ -33,6 +33,8 @@ import {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
+  HeicToJpgPage,
+
   SvgToWebpPage,
   SvgToPngPage, 
   SvgToJpgPage,
@@ -89,6 +91,7 @@ const App = () => {
             <Route path="/image/jpg-to-avif" component={JpgToAvifPage} />
             <Route path="/image/png-to-avif" component={PngToAvifPage} />
             <Route path="/image/heic-to-png" component={HeicToPngPage} />
+            <Route path="/image/heic-to-png" component={HeicToJpgPage} />
             <Route path="/image/svg-to-webp" component={SvgToWebpPage} />
             <Route path="/image/svg-to-png" component={SvgToPngPage} />
             <Route path="/image/svg-to-jpg" component={SvgToJpgPage} />
