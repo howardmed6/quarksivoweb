@@ -1,6 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import FileUploader from './FileUploader.js';
 import Sidebar from './Sidebar.js';
+import ConversionHeader from './ConversionHeader.js';
+import ConversionActions from './ConversionActions.js';
+import RateLimitModal from './RateLimitModal.js';
 import { relatedToolsCombos } from './relatedToolsData.js';
 import '../../styles/conversion-page.css';
 
@@ -216,15 +219,12 @@ const BaseConversionPage = ({
         />
 
         <main className="conversion-main">
-          <div className="conversion-header">
-            <div className="conversion-title">
-              <span className="conversion-icon">{icon}</span>
-              <h1>{title}</h1>
-            </div>
-            <p className="conversion-description">
-              Convierte fácilmente tus archivos {fromFormat.toUpperCase()} a {toFormat.toUpperCase()}
-            </p>
-          </div>
+          <ConversionHeader 
+            icon={icon}
+            title={title}
+            fromFormat={fromFormat}
+            toFormat={toFormat}
+          />
 
           <FileUploader
             acceptedTypes={acceptedTypes}
@@ -237,259 +237,24 @@ const BaseConversionPage = ({
             isFileValid={isFileValid}
           />
 
-          <div className="action-buttons">
-            <button 
-              className={`convert-btn ${isFileValid && !isConverting ? 'active' : 'disabled'}`}
-              onClick={handleConvert}
-              disabled={!isFileValid || isConverting}
-            >
-              {isConverting ? '🔄 Convirtiendo...' : '🚀 Convertir'}
-            </button>
-            
-            <button 
-              className={`download-btn ${convertedImage ? 'active' : 'disabled'}`}
-              onClick={handleDownload}
-              disabled={!convertedImage}
-            >
-              📥 Descargar {toFormat.toUpperCase()}
-            </button>
-
-            {(file || convertedImage) && (
-              <button 
-                className="reset-btn"
-                onClick={handleReset}
-              >
-                🔄 Nuevo archivo
-              </button>
-            )}
-          </div>
+          <ConversionActions 
+            isFileValid={isFileValid}
+            isConverting={isConverting}
+            convertedImage={convertedImage}
+            file={file}
+            toFormat={toFormat}
+            onConvert={handleConvert}
+            onDownload={handleDownload}
+            onReset={handleReset}
+          />
         </main>
       </div>
 
-      {/* MODAL DE RATE LIMITING */}
-      {showRateLimitModal && (
-        <div className="rate-limit-modal-overlay" onClick={closeRateLimitModal}>
-          <div className="rate-limit-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="rate-limit-modal-header">
-              <h2>🚫 Límite de Peticiones Alcanzado</h2>
-              <button className="rate-limit-modal-close" onClick={closeRateLimitModal}>
-                ✕
-              </button>
-            </div>
-            
-            <div className="rate-limit-modal-body">
-              <div className="rate-limit-icon">
-                ⏰
-              </div>
-              
-              <p className="rate-limit-message">
-                {rateLimitInfo?.message}
-              </p>
-              
-              <div className="rate-limit-details">
-                <div className="rate-limit-stat">
-                  <span className="stat-label">Límite diario:</span>
-                  <span className="stat-value">{rateLimitInfo?.maxRequests || 20} peticiones</span>
-                </div>
-                
-                <div className="rate-limit-stat">
-                  <span className="stat-label">Peticiones restantes:</span>
-                  <span className="stat-value">{rateLimitInfo?.remaining || 0}</span>
-                </div>
-                
-                {rateLimitInfo?.resetTime && (
-                  <div className="rate-limit-stat">
-                    <span className="stat-label">Reinicio del límite:</span>
-                    <span className="stat-value">
-                      {new Date(rateLimitInfo.resetTime).toLocaleString('es-ES')}
-                    </span>
-                  </div>
-                )}
-              </div>
-              
-              <div className="rate-limit-suggestions">
-                <h4>💡 Sugerencias:</h4>
-                <ul>
-                  <li>Espera hasta que se restablezca tu límite diario</li>
-                  <li>Optimiza tus imágenes antes de convertir para reducir peticiones</li>
-                  <li>Agrupa varias conversiones si es posible</li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="rate-limit-modal-footer">
-              <button className="rate-limit-ok-btn" onClick={closeRateLimitModal}>
-                Entendido
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      <style jsx>{`
-        .rate-limit-modal-overlay {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100vw;
-          height: 100vh;
-          background-color: rgba(0, 0, 0, 0.6);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 9999;
-          backdrop-filter: blur(4px);
-        }
-
-        .rate-limit-modal {
-          background: white;
-          border-radius: 16px;
-          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-          max-width: 500px;
-          width: 90%;
-          max-height: 90vh;
-          overflow-y: auto;
-          animation: modalSlideIn 0.3s ease-out;
-        }
-
-        @keyframes modalSlideIn {
-          from {
-            opacity: 0;
-            transform: translateY(-30px) scale(0.9);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-          }
-        }
-
-        .rate-limit-modal-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 24px 24px 0;
-          border-bottom: 1px solid #e5e7eb;
-        }
-
-        .rate-limit-modal-header h2 {
-          margin: 0;
-          color: #dc2626;
-          font-size: 1.25rem;
-          font-weight: 600;
-        }
-
-        .rate-limit-modal-close {
-          background: none;
-          border: none;
-          font-size: 24px;
-          cursor: pointer;
-          color: #6b7280;
-          padding: 4px;
-          border-radius: 50%;
-          transition: all 0.2s;
-        }
-
-        .rate-limit-modal-close:hover {
-          background-color: #f3f4f6;
-          color: #374151;
-        }
-
-        .rate-limit-modal-body {
-          padding: 24px;
-          text-align: center;
-        }
-
-        .rate-limit-icon {
-          font-size: 4rem;
-          margin-bottom: 16px;
-        }
-
-        .rate-limit-message {
-          font-size: 1.1rem;
-          color: #374151;
-          margin-bottom: 24px;
-          line-height: 1.6;
-        }
-
-        .rate-limit-details {
-          background-color: #f9fafb;
-          border-radius: 12px;
-          padding: 20px;
-          margin-bottom: 24px;
-          text-align: left;
-        }
-
-        .rate-limit-stat {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-bottom: 12px;
-        }
-
-        .rate-limit-stat:last-child {
-          margin-bottom: 0;
-        }
-
-        .stat-label {
-          font-weight: 500;
-          color: #6b7280;
-        }
-
-        .stat-value {
-          font-weight: 600;
-          color: #111827;
-        }
-
-        .rate-limit-suggestions {
-          text-align: left;
-          background-color: #eff6ff;
-          border-radius: 12px;
-          padding: 20px;
-        }
-
-        .rate-limit-suggestions h4 {
-          margin: 0 0 12px 0;
-          color: #1d4ed8;
-          font-size: 1rem;
-        }
-
-        .rate-limit-suggestions ul {
-          margin: 0;
-          padding-left: 20px;
-        }
-
-        .rate-limit-suggestions li {
-          margin-bottom: 8px;
-          color: #374151;
-          line-height: 1.5;
-        }
-
-        .rate-limit-modal-footer {
-          padding: 0 24px 24px;
-          text-align: center;
-        }
-
-        .rate-limit-ok-btn {
-          background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-          color: white;
-          border: none;
-          padding: 12px 32px;
-          border-radius: 8px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.2s;
-          font-size: 1rem;
-        }
-
-        .rate-limit-ok-btn:hover {
-          transform: translateY(-1px);
-          box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
-        }
-
-        .rate-limit-ok-btn:active {
-          transform: translateY(0);
-        }
-      `}</style>
+      <RateLimitModal 
+        showRateLimitModal={showRateLimitModal}
+        rateLimitInfo={rateLimitInfo}
+        closeRateLimitModal={closeRateLimitModal}
+      />
     </div>
   );
 };

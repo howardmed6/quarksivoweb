@@ -53,7 +53,7 @@ export const conversionOptions = [
    { id: 147, title: 'PNG a WebP', icon: '🔄', route: '/image/png-to-webp', category: 'images' },
    { id: 148, title: 'WebP a PNG', icon: '🔄', route: '/image/webp-to-png', category: 'images' },
    { id: 149, title: 'JPG a AVIF', icon: '🔄', route: '/image/jpg-to-avif', category: 'images' },
-//   { id: 150, title: 'PNG a AVIF', icon: '🔄', route: '/image/png-to-avif', category: 'images' },
+   { id: 150, title: 'PNG a AVIF', icon: '🔄', route: '/image/png-to-avif', category: 'images' },
 //   { id: 151, title: 'AVIF a JPG', icon: '🔄', route: '/image/avif-to-jpg', category: 'images' },
 //   { id: 152, title: 'HEIC a JPG', icon: '🔄', route: '/image/heic-to-jpg', category: 'images' },
 //   { id: 153, title: 'GIF a PNG', icon: '🎬', route: '/image/gif-to-png', category: 'images' },
