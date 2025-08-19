@@ -70,7 +70,7 @@ const MainHeader = () => {
               onClick={() => handleNavClick('home')}
               className="brand-name"
             >
-              QUARKIVO
+              CorQuark
             </button>
           </div>
 
