@@ -1,28 +1,21 @@
 export const BANNER_MESSAGES = [
+
   {
-    text: "ENVÍO GRATIS EN COMPRAS SUPERIORES A $150.000",
-    route: "#"
-  },
-  {
-    text: "DESCUENTO 20% EN TODA LA COLECCIÓN DE ARCHIVO",
-    route: "descuento-archivo"
-  },
-  {
-    text: "NUEVOS PRODUCTOS CADA SEMANA - SUSCRÍBETE",
+    text: "NUEVOS FORMATOS CADA SEMANA - SUSCRÍBETE",
     route: "suscripcion"
   },
   {
-    text: "GARANTÍA DE CALIDAD EN TODOS NUESTROS PRODUCTOS",
+    text: "NUEVAS CAPACIDADES CADA SEMANA",
     route: "garantia"
   }
 ];
 
 export const NAVIGATION_ITEMS = [
-  { key: 'bestsellers', label: 'BESTSELLERS' },
-  { key: 'archivo', label: 'ARCHIVO' },
-  { key: 'colecciones', label: 'COLECCIONES' },
+  //{ key: 'bestsellers', label: 'BESTSELLERS' },
+  //{ key: 'archivo', label: 'ARCHIVO' },
+  //{ key: 'colecciones', label: 'COLECCIONES' },
   { key: 'nosotros', label: 'NOSOTROS' },
-  { key: 'ofertas', label: 'OFERTAS' },
+  //{ key: 'ofertas', label: 'OFERTAS' },
   { key: 'blog', label: 'BLOG' }
 ];
 
