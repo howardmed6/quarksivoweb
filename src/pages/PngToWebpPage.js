@@ -4,7 +4,7 @@ import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
-const PngToJpgPage = () => {
+const PngToWebpPage = () => {
   const conversionOptions = [
     { 
       id: 'optimize-size', 
@@ -21,7 +21,7 @@ const PngToJpgPage = () => {
   // Manejo manual del título y meta tags
   useEffect(() => {
     // Cambiar título
-    document.title = 'PNG a JPG — Convertidor Online Gratis';
+    document.title = 'PNG a WEBP — Convertidor Online Gratis';
     
     // Meta description
     let metaDescription = document.querySelector('meta[name="description"]');
@@ -39,13 +39,13 @@ const PngToJpgPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/png-a-jpg';
+    canonical.href = 'https://tu-dominio.com/png-a-webp';
 
     // JSON-LD
     const jsonLd = {
       "@context": "https://schema.org",
       "@type": ["SoftwareApplication", "HowTo", "FAQPage"],
-      "name": "PNG a JPG — Convertidor Online",
+      "name": "PNG a WBEP — Convertidor Online",
       "applicationCategory": "FileConverter",
       "operatingSystem": "Web",
       "offers": { 
@@ -56,16 +56,16 @@ const PngToJpgPage = () => {
       "howToSteps": [
         { "@type": "HowToStep", "text": "Sube tu archivo PNG." },
         { "@type": "HowToStep", "text": "Elige la opción deseada (calidad/tamaño)." },
-        { "@type": "HowToStep", "text": "Descarga el JPG." }
+        { "@type": "HowToStep", "text": "Descarga el WEBP." }
       ],
-      "image": "https://tu-dominio.com/assets/ejemplos/png-jpg-ejemplo.jpg",
-      "url": "https://tu-dominio.com/png-a-jpg",
+      "image": "https://tu-dominio.com/assets/ejemplos/png-jpg-ejemplo.webp",
+      "url": "https://tu-dominio.com/png-a-webp",
       "mainEntity": [{
         "@type": "Question",
-        "name": "¿Pierde calidad al convertir PNG a JPG?",
+        "name": "¿Pierde calidad al convertir PNG a WEBP?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "JPG usa compresión con pérdida, pero con calidad alta la diferencia es mínima."
+          "text": "WBEP usa compresión con pérdida, pero con calidad alta la diferencia es mínima."
         }
       }]
     };
@@ -88,17 +88,17 @@ const PngToJpgPage = () => {
   return (
     <div className="conversion-page-container">
       <div className="hero-section">
-        <h1 className="hero-title">Convertir PNG a JPG</h1>
+        <h1 className="hero-title">Convertir PNG a WEBP</h1>
         <p className="hero-description">
-          Convierte tus PNG a JPG rápido y gratis. Elige optimización de tamaño o mejora de calidad.
+          Convierte tus PNG a WEBP rápido y gratis. Elige optimización de tamaño o mejora de calidad.
         </p>
       </div>
 
       <BaseConversionPage
-        title="PNG a JPG"
+        title="PNG a WEBP"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="png"
-        toFormat="jpg"
+        toFormat="webp"
         functionType = "image"
         acceptedTypes={['png']}
         conversionOptions={conversionOptions}
@@ -106,7 +106,7 @@ const PngToJpgPage = () => {
       />
 
       <ExtraSection 
-        title="Texto de ejemplo para futura base" 
+        title="" 
         background="#ffffff" 
         color="#000000"
       >
@@ -116,4 +116,4 @@ const PngToJpgPage = () => {
   );
 };
 
-export default PngToJpgPage;
+export default PngToWebpPage;
