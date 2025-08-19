@@ -37,6 +37,13 @@ import {
   SvgToPngPage, 
   SvgToJpgPage,
   SvgToJpegPage,
+  BmpToJpgPage,
+  JpgToBmpPage,
+PngToBmpPage,
+BmpToPngPage,
+GifToWebpPage,
+GifToJpgPage,
+GifToPngPage,
   
   // Páginas de conversión de video
   GifToMp4Page,
@@ -86,6 +93,13 @@ const App = () => {
             <Route path="/image/svg-to-png" component={SvgToPngPage} />
             <Route path="/image/svg-to-jpg" component={SvgToJpgPage} />
             <Route path="/image/svg-to-jpeg" component={SvgToJpegPage} />
+            <Route path="/image/jpg-to-bmp" component={JpgToBmpPage} />
+            <Route path="/image/bmp-to-jpg" component={BmpToJpgPage} />
+            <Route path="/image/png-to-bmp" component={PngToBmpPage} />
+            <Route path="/image/bmp-to-png" component={BmpToPngPage} />
+            <Route path="/image/gif-to-webp" component={GifToWebpPage} />
+            <Route path="/image/gif-to-jpg" component={GifToJpgPage} />
+            <Route path="/image/gif-to-png" component={GifToPngPage} />
             
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />

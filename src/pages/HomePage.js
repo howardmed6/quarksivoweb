@@ -33,7 +33,7 @@ const HomePage = () => {
               </Link>
               <div className="home-text">
                 <Link href="/">
-                  <h1 className="home-title">QUARKIVO</h1>
+                  <h1 className="home-title">CorQuark</h1>
                 </Link>
                 <p className="home-subtitle">Tu archivo digital está listo</p>
               </div>

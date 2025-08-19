@@ -33,6 +33,13 @@ import SvgToWebpPage from '../pages/SvgToWebpPage';
 import SvgToPngPage from '../pages/SvgToPngPage';
 import SvgToJpgPage from '../pages/SvgToJpgPage';
 import SvgToJpegPage from '../pages/SvgToJpegPage';
+import JpgToBmpPage from '../pages/JpgToBmpPage';
+import BmpToJpgPage from '../pages/BmpToJpgPage';
+import PngToBmpPage from '../pages/PngToBmpPage';
+import BmpToPngPage from '../pages/BmpToPngPage';
+import GifToWebpPage from '../pages/GifToWebpPage';
+import GifToJpgPage from '../pages/GifToJpgPage';
+import GifToPngPage from '../pages/GifToPngPage';
 // Páginas de conversión de video
 import GifToMp4Page from '../pages/GifToMp4Page';
 
@@ -66,10 +73,17 @@ export const pages = {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
-   SvgToWebpPage,
+  SvgToWebpPage,
   SvgToPngPage, 
   SvgToJpgPage,
   SvgToJpegPage,
+  JpgToBmpPage,
+BmpToJpgPage,
+PngToBmpPage,
+BmpToPngPage,
+GifToWebpPage,
+GifToJpgPage,
+GifToPngPage,
   
   // Video
   GifToMp4Page,
@@ -105,10 +119,17 @@ export {
   JpgToAvifPage,
   PngToAvifPage,
   HeicToPngPage,
-   SvgToWebpPage,
+  SvgToWebpPage,
   SvgToPngPage, 
   SvgToJpgPage,
   SvgToJpegPage,
+  BmpToJpgPage,
+  JpgToBmpPage,
+PngToBmpPage,
+BmpToPngPage,
+GifToWebpPage,
+GifToJpgPage,
+GifToPngPage,
   
   // Video
   GifToMp4Page,

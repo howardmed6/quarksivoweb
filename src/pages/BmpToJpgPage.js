@@ -1,4 +1,4 @@
-// ========== JPG a WEBP ==========
+// ========== BMP a JPG ==========
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
@@ -6,7 +6,7 @@ import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon, noiseIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
-const JpgToWebpPage = () => {
+const BmpToJpgPage = () => {
   const conversionOptions = [
     { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
     { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar calidad' },
@@ -16,47 +16,47 @@ const JpgToWebpPage = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication","HowTo","FAQPage"],
-    "name": "JPG a WEBP — Convertidor Online",
+    "name": "BMP a JPG — Convertidor Online",
     "applicationCategory": "FileConverter",
     "operatingSystem": "Web",
     "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
     "howToSteps": [
-      { "@type":"HowToStep","text":"Sube tu archivo JPG." },
+      { "@type":"HowToStep","text":"Sube tu archivo BMP." },
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
-      { "@type":"HowToStep","text":"Descarga el WEBP." }
+      { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-webp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-webp",
+    "image": "https://tu-dominio.com/assets/ejemplos/bmp-jpg-ejemplo.jpg",
+    "url": "https://tu-dominio.com/bmp-a-jpg",
     "mainEntity": [{
       "@type":"Question",
-      "name":"¿Cuánto ahorra convertir JPG a WEBP?",
-      "acceptedAnswer":{"@type":"Answer","text":"WEBP puede reducir el tamaño hasta 35% comparado con JPG manteniendo la misma calidad visual."}
+      "name":"¿Cuánto se reduce el tamaño al convertir BMP a JPG?",
+      "acceptedAnswer":{"@type":"Answer","text":"JPG puede reducir el tamaño de un BMP hasta 90% manteniendo buena calidad visual."}
     }]
   };
 
   return (
     <div className="conversion-page-container">
       <Helmet>
-        <title>JPG a WEBP — Convertidor Online Gratis</title>
-        <meta name="description" content="Convierte JPG a WEBP gratis. Reduce hasta 35% el tamaño manteniendo calidad. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-webp" />
+        <title>BMP a JPG — Convertidor Online Gratis</title>
+        <meta name="description" content="Convierte BMP a JPG gratis. Reduce hasta 90% el tamaño del archivo. Optimiza tamaño, mejora calidad o reduce ruido." />
+        <link rel="canonical" href="https://tu-dominio.com/bmp-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
       <div className="hero-section">
-        <h1 className="hero-title">Convertir JPG a WEBP</h1>
+        <h1 className="hero-title">Convertir BMP a JPG</h1>
         <p className="hero-description">
-          Convierte tus JPG a WEBP y reduce el tamaño sin perder calidad. Formato optimizado para web moderna.
+          Convierte tus BMP a JPG y reduce drásticamente el tamaño del archivo. Perfecto para compartir en web.
         </p>
       </div>
 
       <BaseConversionPage
-        title="JPG a WEBP"
+        title="BMP a JPG"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
-        fromFormat="jpg"
-        toFormat="webp"
+        fromFormat="bmp"
+        toFormat="jpg"
         functionType = "image"
-        acceptedTypes={['jpg', 'jpeg']}
+        acceptedTypes={['bmp']}
         conversionOptions={conversionOptions}
         comboType="combo2"
       />
@@ -67,4 +67,4 @@ const JpgToWebpPage = () => {
   );
 };
 
-export default JpgToWebpPage;
+export default BmpToJpgPage;
