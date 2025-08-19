@@ -47,6 +47,7 @@ export const conversionOptions = [
    { id: 142, title: 'PNG a JPG', icon: '🔄', route: '/image/png-to-jpg', category: 'images' },
    { id: 143, title: 'JPG a PNG', icon: '🔄', route: '/image/jpg-to-png', category: 'images' },
    { id: 144, title: 'BMP a JPG', icon: '🔄', route: '/image/bmp-to-jpg', category: 'images' },
+   { id: 145, title: 'JPG a BMP', icon: '🔄', route: '/image/jpg-to-bmp', category: 'images' },
    { id: 145, title: 'WebP a JPG', icon: '🔄', route: '/image/webp-to-jpg', category: 'images' },
    { id: 146, title: 'JPG a WebP', icon: '🔄', route: '/image/jpg-to-webp', category: 'images' },
    { id: 147, title: 'PNG a WebP', icon: '🔄', route: '/image/png-to-webp', category: 'images' },
