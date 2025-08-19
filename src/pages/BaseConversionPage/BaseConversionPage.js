@@ -24,7 +24,7 @@ const BaseConversionPage = ({
 
   // URL dinámica basada en functionType y los formatos
   const BASE_URL = `https://quarksivo-a4fuc8a0grc3bjer.eastus2-01.azurewebsites.net/api/${functionType}`;
-  const AZURE_FUNCTION_URL = `${BASE_URL}/convert/${fromFormat}-to-${toFormat}`;
+  const AZURE_FUNCTION_URL = `${BASE_URL}/${fromFormat}-to-${toFormat}`;
 
   const handleFileChange = useCallback((newFile) => {
     console.log('📁 Archivo seleccionado:', newFile?.name);
