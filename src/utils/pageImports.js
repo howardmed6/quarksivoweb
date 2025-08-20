@@ -51,6 +51,18 @@ import BmpToPngPage from '../pages/BmpToPngPage';
 import GifToWebpPage from '../pages/GifToWebpPage';
 import GifToJpgPage from '../pages/GifToJpgPage';
 import GifToPngPage from '../pages/GifToPngPage';
+
+
+import JpgToPdfPage from '../pages/JpgToPdfPage';
+import PngToPdfPage from '../pages/PngToPdfPage';
+import AvifToPdfPage from '../pages/AvifToPdfPage';
+import BmpToPdfPage from '../pages/BmpToPdfPage';
+import WebpToPdfPage from '../pages/WebpToPdfPage';
+import HeicToPdfPage from '../pages/HeicToPdfPage';
+import GifToPdfPage from '../pages/GifToPdfPage';
+import TiffToPdfPage from '../pages/TiffToPdfPage';
+import SvgToPdfPage from '../pages/SvgToPdfPage';
+import IcoToPdfPage from '../pages/IcoToPdfPage';
 // Páginas de conversión de video
 import GifToMp4Page from '../pages/GifToMp4Page';
 
@@ -105,7 +117,18 @@ AvifToHeicPage,
 AvifToPngPage,
 AvifToWebpPage,
 AvifToBmpPage,
-  
+
+JpgToPdfPage,
+PngToPdfPage,
+AvifToPdfPage,
+BmpToPdfPage,
+WebpToPdfPage,
+HeicToPdfPage,
+GifToPdfPage,
+TiffToPdfPage,
+SvgToPdfPage,
+IcoToPdfPage,
+
   // Video
   GifToMp4Page,
   
@@ -161,6 +184,17 @@ AvifToHeicPage,
 AvifToPngPage,
 AvifToWebpPage,
 AvifToBmpPage,
+
+JpgToPdfPage,
+PngToPdfPage,
+AvifToPdfPage,
+BmpToPdfPage,
+WebpToPdfPage,
+HeicToPdfPage,
+GifToPdfPage,
+TiffToPdfPage,
+SvgToPdfPage,
+IcoToPdfPage,
   // Video
   GifToMp4Page,
   

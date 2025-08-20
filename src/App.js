@@ -55,6 +55,17 @@ BmpToPngPage,
 GifToWebpPage,
 GifToJpgPage,
 GifToPngPage,
+
+JpgToPdfPage,
+PngToPdfPage,
+AvifToPdfPage,
+BmpToPdfPage,
+WebpToPdfPage,
+HeicToPdfPage,
+GifToPdfPage,
+TiffToPdfPage,
+SvgToPdfPage,
+IcoToPdfPage,
   
   // Páginas de conversión de video
   GifToMp4Page,
@@ -122,6 +133,16 @@ const App = () => {
 <Route path="/image/avif-to-webp" component={AvifToWebpPage} />
 <Route path="/image/avif-to-bmp" component={AvifToBmpPage} />
             
+<Route path="/image/jpg-to-pdf" component={JpgToPdfPage} />
+<Route path="/image/png-to-pdf" component={PngToPdfPage} />
+<Route path="/image/avif-to-pdf" component={AvifToPdfPage} />
+<Route path="/image/bmp-to-pdf" component={BmpToPdfPage} />
+<Route path="/image/webp-to-pdf" component={WebpToPdfPage} />
+<Route path="/image/heic-to-pdf" component={HeicToPdfPage} />
+<Route path="/image/gif-to-pdf" component={GifToPdfPage} />
+<Route path="/image/tiff-to-pdf" component={TiffToPdfPage} />
+<Route path="/image/svg-to-pdf" component={SvgToPdfPage} />
+<Route path="/image/ico-to-pdf" component={IcoToPdfPage} />
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
             
