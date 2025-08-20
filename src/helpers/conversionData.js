@@ -77,19 +77,21 @@ export const conversionOptions = [
 { id: 171, title: 'PNG a HEIC', icon: '🔄', route: '/image/png-to-heic', category: 'images' },
 { id: 172, title: 'WebP a HEIC', icon: '🔄', route: '/image/webp-to-heic', category: 'images' },
 { id: 173, title: 'AVIF a HEIC', icon: '🔄', route: '/image/avif-to-heic', category: 'images' },
-
+{ id: 174, title: 'AVIF a PNG', icon: '🔄', route: '/image/avif-to-png', category: 'images' },
+{ id: 175, title: 'AVIF a WebP', icon: '🔄', route: '/image/avif-to-webp', category: 'images' },
+{ id: 176, title: 'AVIF a BMP', icon: '🔄', route: '/image/avif-to-bmp', category: 'images' },
 
 //   // 🎬 Videos (IDs 262-264)
-//   { id: 262, title: 'MP4 a GIF', icon: '🎬', route: '/video/mp4-to-gif', category: 'videos' },
-//   { id: 263, title: 'GIF a MP4', icon: '🎬', route: '/video/gif-to-mp4', category: 'videos' },
-//   { id: 264, title: 'MOV a MP4', icon: '🎬', route: '/video/mov-to-mp4', category: 'videos' },
+//   { id: 462, title: 'MP4 a GIF', icon: '🎬', route: '/video/mp4-to-gif', category: 'videos' },
+//   { id: 463, title: 'GIF a MP4', icon: '🎬', route: '/video/gif-to-mp4', category: 'videos' },
+//   { id: 464, title: 'MOV a MP4', icon: '🎬', route: '/video/mov-to-mp4', category: 'videos' },
 
 //   // 🎵 Audio (IDs 365-369)
-//   { id: 365, title: 'MP4 a MP3', icon: '🎵', route: '/audio/mp4-to-mp3', category: 'audio' },
-//   { id: 366, title: 'WAV a MP3', icon: '🎵', route: '/audio/wav-to-mp3', category: 'audio' },
-//   { id: 367, title: 'MP3 a OGG', icon: '🎵', route: '/audio/mp3-to-ogg', category: 'audio' },
-//   { id: 368, title: 'Recortar audio', icon: '✂️', route: '/audio/trim-audio', category: 'audio' },
-//   { id: 369, title: 'MP3 a texto', icon: '🎙️', route: '/audio/mp3-to-text', category: 'audio' },
+//   { id: 565, title: 'MP4 a MP3', icon: '🎵', route: '/audio/mp4-to-mp3', category: 'audio' },
+//   { id: 566, title: 'WAV a MP3', icon: '🎵', route: '/audio/wav-to-mp3', category: 'audio' },
+//   { id: 567, title: 'MP3 a OGG', icon: '🎵', route: '/audio/mp3-to-ogg', category: 'audio' },
+//   { id: 568, title: 'Recortar audio', icon: '✂️', route: '/audio/trim-audio', category: 'audio' },
+//   { id: 569, title: 'MP3 a texto', icon: '🎙️', route: '/audio/mp3-to-text', category: 'audio' },
 
   // 🔧 Otros (IDs 470+)
   // Aquí puedes agregar nuevas funcionalidades que no encajen en las otras categorías
