@@ -1,16 +1,16 @@
 export const conversionOptions = [
   // 📂 Documentos (IDs 1-38)
-//   { id: 1, title: 'Word a PDF', icon: '📄', route: '/document/word-to-pdf', category: 'documents' },
-//   { id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
-//   { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
-//   { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
-//   { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
-//   { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
-//   { id: 7, title: 'Convertir a PDF', icon: '📋', route: '/document/any-to-pdf', category: 'documents' },
-//   { id: 8, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
-//   { id: 9, title: 'PDF a TXT', icon: '📄', route: '/document/pdf-to-txt', category: 'documents' },
-//   { id: 10, title: 'PDF a HTML', icon: '🌐', route: '/document/pdf-to-html', category: 'documents' },
-//   { id: 11, title: 'HTML a PDF', icon: '🌐', route: '/document/html-to-pdf', category: 'documents' },
+   { id: 1, title: 'Word a PDF', icon: '📄', route: '/document/word-to-pdf', category: 'documents' },
+   { id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
+   { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
+   { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
+   { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
+   { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
+   { id: 7, title: 'Convertir a PDF', icon: '📋', route: '/document/any-to-pdf', category: 'documents' },
+   { id: 8, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
+   { id: 9, title: 'PDF a TXT', icon: '📄', route: '/document/pdf-to-txt', category: 'documents' },
+   { id: 10, title: 'PDF a HTML', icon: '🌐', route: '/document/pdf-to-html', category: 'documents' },
+   { id: 11, title: 'HTML a PDF', icon: '🌐', route: '/document/html-to-pdf', category: 'documents' },
 //   { id: 12, title: 'Eliminar contraseña PDF', icon: '🔓', route: '/document/remove-pdf-password', category: 'documents' },
 //   { id: 13, title: 'DOCX a DOC', icon: '📝', route: '/document/docx-to-doc', category: 'documents' },
 //   { id: 14, title: 'DOC a DOCX', icon: '📝', route: '/document/doc-to-docx', category: 'documents' },
@@ -56,9 +56,9 @@ export const conversionOptions = [
    { id: 150, title: 'PNG a AVIF', icon: '🔄', route: '/image/png-to-avif', category: 'images' },
    { id: 151, title: 'AVIF a JPG', icon: '🔄', route: '/image/avif-to-jpg', category: 'images' },
    { id: 152, title: 'HEIC a JPG', icon: '🔄', route: '/image/heic-to-jpg', category: 'images' },
-//   { id: 153, title: 'GIF a PNG', icon: '🎬', route: '/image/gif-to-png', category: 'images' },
-//   { id: 154, title: 'GIF a JPG', icon: '🎬', route: '/image/gif-to-jpg', category: 'images' },
-//   { id: 155, title: 'GIF a WebP', icon: '🎬', route: '/image/gif-to-webp', category: 'images' },
+   //{ id: 153, title: 'GIF a PNG', icon: '🎬', route: '/image/gif-to-png', category: 'images' },
+  //{ id: 154, title: 'GIF a JPG', icon: '🎬', route: '/image/gif-to-jpg', category: 'images' },
+  // { id: 155, title: 'GIF a WebP', icon: '🎬', route: '/image/gif-to-webp', category: 'images' },
 //   { id: 156, title: 'Imagen a ICO', icon: '🖼️', route: '/image/image-to-ico', category: 'images' },
 //   { id: 157, title: 'Redimensionar imagen', icon: '📏', route: '/image/resize-image', category: 'images' },
 //   { id: 158, title: 'Comprimir imagen', icon: '🗜️', route: '/image/compress-image', category: 'images' },
@@ -98,8 +98,10 @@ export const conversionOptions = [
 { id: 191, title: 'WebP a TIFF', icon: '📊', route: '/image/webp-to-tiff', category: 'images' },
 { id: 192, title: 'AVIF a TIFF', icon: '📊', route: '/image/avif-to-tiff', category: 'images' },
 
-//{ id: 183, title: 'SVG a PDF', icon: '📄', route: '/image/svg-to-pdf', category: 'images' },
-//{ id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
+{ id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
+
+
+
 //   // 🎬 Videos (IDs 262-264)
 //   { id: 462, title: 'MP4 a GIF', icon: '🎬', route: '/video/mp4-to-gif', category: 'videos' },
 //   { id: 463, title: 'GIF a MP4', icon: '🎬', route: '/video/gif-to-mp4', category: 'videos' },
@@ -149,7 +151,8 @@ const popularityOrder = [
   3,   // Excel a PDF
   4,   // PDF a Excel
   142, // PNG a JPG
-  143, // JPG a PNG
+  143,
+  175, // JPG a PNG
   25,  // Unir PDF
   26,  // Dividir PDF
   27,  // Comprimir PDF
@@ -157,7 +160,10 @@ const popularityOrder = [
   6,   // PDF a PPT
   141, // PNG a PDF
   158, // Comprimir imagen
-  157, // Redimensionar imagen
+  157,
+  176,
+  177,
+  178, // Redimensionar imagen
   365, // MP4 a MP3
   366, // WAV a MP3
   262, // MP4 a GIF
@@ -165,10 +171,15 @@ const popularityOrder = [
   9,   // PDF a TXT
   39,
   162,
+  179,
+  180,
+
   163,
   164,
   165,
   166,
+  181,
+  182,
   // ... el resto en orden del array original
 ];
 
