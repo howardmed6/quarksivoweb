@@ -61,7 +61,7 @@ const AvifToHeicPage = () => {
        comboType="combo2"
      />
 
-     <ExtraSection title="Texto de ejemplo para futura base" background="#ffffff" color="#000000">
+     <ExtraSection title="" background="#ffffff" color="#000000">
      </ExtraSection>
    </div>
  );
