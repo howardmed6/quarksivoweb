@@ -40,6 +40,9 @@ JpgToHeicPage,
 PngToHeicPage,
 WebpToHeicPage,
 AvifToHeicPage,
+AvifToPngPage,
+AvifToWebpPage,
+AvifToBmpPage,
 
   SvgToWebpPage,
   SvgToPngPage, 
@@ -115,6 +118,9 @@ const App = () => {
 <Route path="/image/png-to-heic" component={PngToHeicPage} />
 <Route path="/image/webp-to-heic" component={WebpToHeicPage} />
 <Route path="/image/avif-to-heic" component={AvifToHeicPage} />
+<Route path="/image/avif-to-png" component={AvifToPngPage} />
+<Route path="/image/avif-to-webp" component={AvifToWebpPage} />
+<Route path="/image/avif-to-bmp" component={AvifToBmpPage} />
             
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />

@@ -20,6 +20,9 @@ import PdfToTxtPage from '../pages/PdfToTxtPage';
 import JpgToPngPage from '../pages/JpgToPngPage';
 import PngToJpgPage from '../pages/PngToJpgPage';
 import WebpToJpgPage from '../pages/WebpToJpgPage';
+import AvifToPngPage from '../pages/AvifToPngPage';
+import AvifToWebpPage from '../pages/AvifToWebpPage';
+import AvifToBmpPage from '../pages/AvifToBmpPage';
 
 // Nuevas páginas de conversión de imágenes
 import JpgToWebpPage from '../pages/JpgToWebpPage';
@@ -99,6 +102,9 @@ JpgToHeicPage,
 PngToHeicPage,
 WebpToHeicPage,
 AvifToHeicPage,
+AvifToPngPage,
+AvifToWebpPage,
+AvifToBmpPage,
   
   // Video
   GifToMp4Page,
@@ -152,6 +158,9 @@ JpgToHeicPage,
 PngToHeicPage,
 WebpToHeicPage,
 AvifToHeicPage,
+AvifToPngPage,
+AvifToWebpPage,
+AvifToBmpPage,
   // Video
   GifToMp4Page,
   
