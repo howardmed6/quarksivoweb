@@ -1,17 +1,6 @@
 export const conversionOptions = [
   // 📂 Documentos (IDs 1-38)
-   { id: 1, title: 'Word a PDF', icon: '📄', route: '/document/word-to-pdf', category: 'documents' },
-   { id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
-   { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
-   { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
-   { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
-   { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
-   { id: 7, title: 'Convertir a PDF', icon: '📋', route: '/document/any-to-pdf', category: 'documents' },
-   { id: 8, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
-   { id: 9, title: 'PDF a TXT', icon: '📄', route: '/document/pdf-to-txt', category: 'documents' },
-   { id: 10, title: 'PDF a HTML', icon: '🌐', route: '/document/pdf-to-html', category: 'documents' },
-   { id: 11, title: 'HTML a PDF', icon: '🌐', route: '/document/html-to-pdf', category: 'documents' },
-//   { id: 12, title: 'Eliminar contraseña PDF', icon: '🔓', route: '/document/remove-pdf-password', category: 'documents' },
+   
 //   { id: 13, title: 'DOCX a DOC', icon: '📝', route: '/document/docx-to-doc', category: 'documents' },
 //   { id: 14, title: 'DOC a DOCX', icon: '📝', route: '/document/doc-to-docx', category: 'documents' },
 //   { id: 15, title: 'DOC a ODT', icon: '📝', route: '/document/doc-to-odt', category: 'documents' },
@@ -66,10 +55,10 @@ export const conversionOptions = [
 //   { id: 160, title: 'Texto a imagen', icon: '🖼️', route: '/image/text-to-image', category: 'images' },
 //   { id: 161, title: 'OCR: Imagen a texto', icon: '👁️', route: '/image/ocr-image-to-text', category: 'images' },
  { id: 162, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
- { id: 163, title: 'SVG a WebP', icon: '🔄', route: '/image/svg-to-webp', category: 'images' },
- { id: 164, title: 'SVG a PNG', icon: '🔄', route: '/image/svg-to-png', category: 'images' },
- { id: 165, title: 'SVG a JPG', icon: '🔄', route: '/image/svg-to-jpg', category: 'images' },
- { id: 166, title: 'SVG a JPEG', icon: '🔄', route: '/image/svg-to-jpeg', category: 'images' },
+// { id: 163, title: 'SVG a WebP', icon: '🔄', route: '/image/svg-to-webp', category: 'images' },
+ //{ id: 164, title: 'SVG a PNG', icon: '🔄', route: '/image/svg-to-png', category: 'images' },
+// { id: 165, title: 'SVG a JPG', icon: '🔄', route: '/image/svg-to-jpg', category: 'images' },
+// { id: 166, title: 'SVG a JPEG', icon: '🔄', route: '/image/svg-to-jpeg', category: 'images' },
 { id: 167, title: 'HEIC a PNG', icon: '🔄', route: '/image/heic-to-png', category: 'images' },
 { id: 168, title: 'HEIC a WebP', icon: '🔄', route: '/image/heic-to-webp', category: 'images' },
 { id: 169, title: 'HEIC a AVIF', icon: '🔄', route: '/image/heic-to-avif', category: 'images' },
@@ -100,6 +89,26 @@ export const conversionOptions = [
 
 { id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
 
+
+
+
+
+
+
+
+
+{ id: 1, title: 'Word a PDF', icon: '📄', route: '/document/word-to-pdf', category: 'documents' },
+   { id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
+  // { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
+  // { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
+   { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
+   { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
+   //{ id: 7, title: 'Convertir a PDF', icon: '📋', route: '/document/any-to-pdf', category: 'documents' },
+   //{ id: 8, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
+  // { id: 9, title: 'PDF a TXT', icon: '📄', route: '/document/pdf-to-txt', category: 'documents' },
+ //  { id: 10, title: 'PDF a HTML', icon: '🌐', route: '/document/pdf-to-html', category: 'documents' },
+//  { id: 11, title: 'HTML a PDF', icon: '🌐', route: '/document/html-to-pdf', category: 'documents' },
+   { id: 12, title: 'Eliminar contraseña PDF', icon: '🔓', route: '/document/remove-pdf-password', category: 'documents' },
 
 
 //   // 🎬 Videos (IDs 262-264)
@@ -180,6 +189,17 @@ const popularityOrder = [
   166,
   181,
   182,
+  183,
+  184,
+  185,
+  186,
+  187,
+  188,
+  189,
+  190,
+  191,
+  192,
+  
   // ... el resto en orden del array original
 ];
 
