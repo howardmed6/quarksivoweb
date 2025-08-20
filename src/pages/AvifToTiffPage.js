@@ -3,72 +3,67 @@ import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon, noiseIcon } from '../utils/iconImports';
-import '../styles/pagespages.css'; // o la ruta correcta a tu archivo CSS
+import '../styles/pagespages.css';
 
-const SvgToPngPage = () => {
+const AvifToTiffPage = () => {
   const conversionOptions = [
     { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
     { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar calidad' },
     { id: 'reduce-noise',  icon: <img src={noiseIcon}  alt="ruido"     width={24} height={24} />, label: 'Reducir ruido' }
-    ];
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication","HowTo","FAQPage"],
-    "name": "SVG a PNG — Convertidor Online",
+    "name": "AVIF a TIFF — Convertidor Online",
     "applicationCategory": "FileConverter",
     "operatingSystem": "Web",
     "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
     "howToSteps": [
-      { "@type":"HowToStep","text":"Sube tu archivo SVG." },
-      { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
-      { "@type":"HowToStep","text":"Descarga el PNG." }
+      { "@type":"HowToStep","text":"Sube tu archivo AVIF." },
+      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
+      { "@type":"HowToStep","text":"Descarga el TIFF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-png",
+    "image": "https://tu-dominio.com/assets/ejemplos/avif-tiff-ejemplo.jpg",
+    "url": "https://tu-dominio.com/avif-a-tiff",
     "mainEntity": [{
       "@type":"Question",
-      "name":"¿Mantiene transparencia al convertir SVG a PNG?",
-      "acceptedAnswer":{"@type":"Answer","text":"Sí, PNG conserva perfectamente la transparencia de los archivos SVG."}
+      "name":"¿Puedo convertir el moderno formato AVIF a TIFF?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sí, convertimos AVIF a TIFF manteniendo la calidad para mayor compatibilidad y uso profesional."}
     }]
   };
 
   return (
     <div className="conversion-page-container">
-      {/* --- Head optimizado para Google --- */}
       <Helmet>
-        <title>SVG a PNG — Convertidor Online Gratis</title>
-        <meta name="description" content="Convierte SVG a PNG gratis. Mantiene transparencia, optimiza tamaño y mejora calidad." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-png" />
+        <title>AVIF a TIFF — Convertidor Online Gratis</title>
+        <meta name="description" content="Convierte AVIF a TIFF gratis. Mejora compatibilidad manteniendo calidad. Ideal para uso profesional y archivo." />
+        <link rel="canonical" href="https://tu-dominio.com/avif-a-tiff" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      {/* Bloque futurista SOLO para título + descripción */}
       <div className="hero-section">
-        <h1 className="hero-title">Convertir SVG a PNG</h1>
+        <h1 className="hero-title">Convertir AVIF a TIFF</h1>
         <p className="hero-description">
-          Convierte tus SVG vectoriales a PNG rápido y gratis. Mantiene transparencia y permite redimensionar.
+          Convierte tus AVIF a TIFF mejorando compatibilidad y manteniendo calidad. Ideal para uso profesional y archivo.
         </p>
       </div>
 
-      {/* Conversor */}
       <BaseConversionPage
-        title="SVG a PNG"
+        title="AVIF a TIFF"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
-        fromFormat="svg"
-        toFormat="png"
+        fromFormat="avif"
+        toFormat="tiff"
         functionType = "image"
-        acceptedTypes={['svg']}
+        acceptedTypes={['avif']}
         conversionOptions={conversionOptions}
         comboType="combo2"
       />
 
-      {/* Sección extra (blanca) */}
       <ExtraSection title="" background="#ffffff" color="#000000">
-        
       </ExtraSection>
     </div>
   );
 };
 
-export default SvgToPngPage;
+export default AvifToTiffPage;

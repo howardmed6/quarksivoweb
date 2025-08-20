@@ -57,6 +57,7 @@ const SvgToJpegPage = () => {
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="svg"
         toFormat="jpeg"
+        functionType = "image"
         acceptedTypes={['svg']}
         conversionOptions={conversionOptions}
         comboType="combo2"

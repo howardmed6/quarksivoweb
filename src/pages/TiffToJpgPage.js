@@ -3,72 +3,67 @@ import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
 import { reloadIcon, optimizeIcon, qualityIcon, noiseIcon } from '../utils/iconImports';
-import '../styles/pagespages.css'; // o la ruta correcta a tu archivo CSS
+import '../styles/pagespages.css';
 
-const SvgToJpgPage = () => {
+const TiffToJpgPage = () => {
   const conversionOptions = [
-   { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
+    { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Disminuir tamaño en lo posible' },
     { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar calidad' },
     { id: 'reduce-noise',  icon: <img src={noiseIcon}  alt="ruido"     width={24} height={24} />, label: 'Reducir ruido' }
-    ];
+  ];
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": ["SoftwareApplication","HowTo","FAQPage"],
-    "name": "SVG a JPG — Convertidor Online",
+    "name": "TIFF a JPG — Convertidor Online",
     "applicationCategory": "FileConverter",
     "operatingSystem": "Web",
     "offers": { "@type":"Offer", "price":"0", "priceCurrency":"USD" },
     "howToSteps": [
-      { "@type":"HowToStep","text":"Sube tu archivo SVG." },
-      { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
+      { "@type":"HowToStep","text":"Sube tu archivo TIFF." },
+      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-jpg",
+    "image": "https://tu-dominio.com/assets/ejemplos/tiff-jpg-ejemplo.jpg",
+    "url": "https://tu-dominio.com/tiff-a-jpg",
     "mainEntity": [{
       "@type":"Question",
-      "name":"¿Qué pasa con la transparencia al convertir SVG a JPG?",
-      "acceptedAnswer":{"@type":"Answer","text":"JPG no soporta transparencia, por lo que se aplica un fondo blanco automáticamente."}
+      "name":"¿Se mantiene la calidad al convertir TIFF a JPG?",
+      "acceptedAnswer":{"@type":"Answer","text":"Sí, optimizamos la conversión para mantener la mejor calidad posible en formato JPG."}
     }]
   };
 
   return (
     <div className="conversion-page-container">
-      {/* --- Head optimizado para Google --- */}
       <Helmet>
-        <title>SVG a JPG — Convertidor Online Gratis</title>
-        <meta name="description" content="Convierte SVG a JPG gratis. Aplica fondo automático, optimiza tamaño y mejora calidad." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-jpg" />
+        <title>TIFF a JPG — Convertidor Online Gratis</title>
+        <meta name="description" content="Convierte TIFF a JPG gratis. Reduce el tamaño manteniendo buena calidad. Ideal para web y compartir imágenes." />
+        <link rel="canonical" href="https://tu-dominio.com/tiff-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
-      {/* Bloque futurista SOLO para título + descripción */}
       <div className="hero-section">
-        <h1 className="hero-title">Convertir SVG a JPG</h1>
+        <h1 className="hero-title">Convertir TIFF a JPG</h1>
         <p className="hero-description">
-          Convierte tus SVG vectoriales a JPG rápido y gratis. Optimiza tamaño con fondo automático.
+          Convierte tus TIFF a JPG reduciendo el tamaño y manteniendo buena calidad. Ideal para web y compartir imágenes.
         </p>
       </div>
 
-      {/* Conversor */}
       <BaseConversionPage
-        title="SVG a JPG"
+        title="TIFF a JPG"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
-        fromFormat="svg"
+        fromFormat="tiff"
         toFormat="jpg"
         functionType = "image"
-        acceptedTypes={['svg']}
+        acceptedTypes={['tiff', 'tif']}
         conversionOptions={conversionOptions}
         comboType="combo2"
       />
 
-      {/* Sección extra (blanca) */}
       <ExtraSection title="" background="#ffffff" color="#000000">
-        
       </ExtraSection>
     </div>
   );
 };
 
-export default SvgToJpgPage;
+export default TiffToJpgPage;

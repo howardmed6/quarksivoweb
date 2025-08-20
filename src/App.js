@@ -56,6 +56,16 @@ GifToWebpPage,
 GifToJpgPage,
 GifToPngPage,
 
+IcoToSvgPage,
+TiffToJpgPage,
+TiffToPngPage,
+TiffToWebpPage,
+TiffToAvifPage,
+JpgToTiffPage,
+PngToTiffPage,
+WebpToTiffPage,
+AvifToTiffPage,
+
 JpgToPdfPage,
 PngToPdfPage,
 AvifToPdfPage,
@@ -143,6 +153,16 @@ const App = () => {
 <Route path="/image/tiff-to-pdf" component={TiffToPdfPage} />
 <Route path="/image/svg-to-pdf" component={SvgToPdfPage} />
 <Route path="/image/ico-to-pdf" component={IcoToPdfPage} />
+
+<Route path="/image/ico-to-svg" component={IcoToSvgPage} />
+<Route path="/image/tiff-to-jpg" component={TiffToJpgPage} />
+<Route path="/image/tiff-to-png" component={TiffToPngPage} />
+<Route path="/image/tiff-to-webp" component={TiffToWebpPage} />
+<Route path="/image/tiff-to-avif" component={TiffToAvifPage} />
+<Route path="/image/jpg-to-tiff" component={JpgToTiffPage} />
+<Route path="/image/png-to-tiff" component={PngToTiffPage} />
+<Route path="/image/webp-to-tiff" component={WebpToTiffPage} />
+<Route path="/image/avif-to-tiff" component={AvifToTiffPage} />
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
             

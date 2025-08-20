@@ -40,6 +40,17 @@ import PngToHeicPage from '../pages/PngToHeicPage';
 import WebpToHeicPage from '../pages/WebpToHeicPage';
 import AvifToHeicPage from '../pages/AvifToHeicPage';
 
+
+import IcoToSvgPage from '../pages/IcoToSvgPage';
+import TiffToJpgPage from '../pages/TiffToJpgPage';
+import TiffToPngPage from '../pages/TiffToPngPage';
+import TiffToWebpPage from '../pages/TiffToWebpPage';
+import TiffToAvifPage from '../pages/TiffToAvifPage';
+import JpgToTiffPage from '../pages/JpgToTiffPage';
+import PngToTiffPage from '../pages/PngToTiffPage';
+import WebpToTiffPage from '../pages/WebpToTiffPage';
+import AvifToTiffPage from '../pages/AvifToTiffPage';
+
 import SvgToWebpPage from '../pages/SvgToWebpPage';
 import SvgToPngPage from '../pages/SvgToPngPage';
 import SvgToJpgPage from '../pages/SvgToJpgPage';
@@ -117,6 +128,15 @@ AvifToHeicPage,
 AvifToPngPage,
 AvifToWebpPage,
 AvifToBmpPage,
+IcoToSvgPage,
+TiffToJpgPage,
+TiffToPngPage,
+TiffToWebpPage,
+TiffToAvifPage,
+JpgToTiffPage,
+PngToTiffPage,
+WebpToTiffPage,
+AvifToTiffPage,
 
 JpgToPdfPage,
 PngToPdfPage,
@@ -195,6 +215,15 @@ GifToPdfPage,
 TiffToPdfPage,
 SvgToPdfPage,
 IcoToPdfPage,
+IcoToSvgPage,
+TiffToJpgPage,
+TiffToPngPage,
+TiffToWebpPage,
+TiffToAvifPage,
+JpgToTiffPage,
+PngToTiffPage,
+WebpToTiffPage,
+AvifToTiffPage,
   // Video
   GifToMp4Page,
   
