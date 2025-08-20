@@ -41,9 +41,9 @@ export const conversionOptions = [
 //   { id: 39, title: 'DOCX a PDF', icon: '📄', route: '/document/docx-to-pdf', category: 'documents' },
 
 //   // 🖼️ Imágenes (IDs 139-161)
-   { id: 139, title: 'JPG a PDF', icon: '🖼️', route: '/document/jpg-to-pdf', category: 'images' },
+   { id: 139, title: 'JPG a PDF', icon: '🖼️', route: '/image/jpg-to-pdf', category: 'images' },
 //   { id: 140, title: 'PDF a JPG', icon: '🖼️', route: '/document/pdf-to-jpg', category: 'images' },
-   { id: 141, title: 'PNG a PDF', icon: '🖼️', route: '/document/png-to-pdf', category: 'images' },
+   { id: 141, title: 'PNG a PDF', icon: '🖼️', route: '/image/png-to-pdf', category: 'images' },
    { id: 142, title: 'PNG a JPG', icon: '🔄', route: '/image/png-to-jpg', category: 'images' },
    { id: 143, title: 'JPG a PNG', icon: '🔄', route: '/image/jpg-to-png', category: 'images' },
    //{ id: 144, title: 'BMP a JPG', icon: '🔄', route: '/image/bmp-to-jpg', category: 'images' },
@@ -85,7 +85,7 @@ export const conversionOptions = [
 { id: 179, title: 'WebP a PDF', icon: '📄', route: '/image/webp-to-pdf', category: 'images' },
 { id: 180, title: 'HEIC a PDF', icon: '📄', route: '/image/heic-to-pdf', category: 'images' },
 { id: 181, title: 'GIF a PDF', icon: '📄', route: '/image/gif-to-pdf', category: 'images' },
-//{ id: 182, title: 'TIFF a PDF', icon: '📄', route: '/image/tiff-to-pdf', category: 'images' },
+{ id: 182, title: 'TIFF a PDF', icon: '📄', route: '/image/tiff-to-pdf', category: 'images' },
 //{ id: 183, title: 'SVG a PDF', icon: '📄', route: '/image/svg-to-pdf', category: 'images' },
 //{ id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
 //   // 🎬 Videos (IDs 262-264)
