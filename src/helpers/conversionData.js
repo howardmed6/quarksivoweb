@@ -87,6 +87,17 @@ export const conversionOptions = [
 { id: 181, title: 'GIF a PDF', icon: '📄', route: '/image/gif-to-pdf', category: 'images' },
 { id: 182, title: 'TIFF a PDF', icon: '📄', route: '/image/tiff-to-pdf', category: 'images' },
 
+{ id: 183, title: 'SVG a PDF', icon: '📄', route: '/image/svg-to-pdf', category: 'images' },
+{ id: 184, title: 'ICO a SVG', icon: '🎯', route: '/image/ico-to-svg', category: 'images' },
+{ id: 185, title: 'TIFF a JPG', icon: '🖼️', route: '/image/tiff-to-jpg', category: 'images' },
+{ id: 186, title: 'TIFF a PNG', icon: '🖼️', route: '/image/tiff-to-png', category: 'images' },
+{ id: 187, title: 'TIFF a WebP', icon: '🌐', route: '/image/tiff-to-webp', category: 'images' },
+{ id: 188, title: 'TIFF a AVIF', icon: '⚡', route: '/image/tiff-to-avif', category: 'images' },
+{ id: 189, title: 'JPG a TIFF', icon: '📊', route: '/image/jpg-to-tiff', category: 'images' },
+{ id: 190, title: 'PNG a TIFF', icon: '📊', route: '/image/png-to-tiff', category: 'images' },
+{ id: 191, title: 'WebP a TIFF', icon: '📊', route: '/image/webp-to-tiff', category: 'images' },
+{ id: 192, title: 'AVIF a TIFF', icon: '📊', route: '/image/avif-to-tiff', category: 'images' },
+
 //{ id: 183, title: 'SVG a PDF', icon: '📄', route: '/image/svg-to-pdf', category: 'images' },
 //{ id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
 //   // 🎬 Videos (IDs 262-264)
