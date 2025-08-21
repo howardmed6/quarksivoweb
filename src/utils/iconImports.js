@@ -1,11 +1,9 @@
-import reloadIcon from "../assets/icons/reload.svg";
-import optimizeIcon from "../assets/icons/optimize.svg";
-import qualityIcon from "../assets/icons/quality.svg";
-import noiseIcon from "../assets/icons/noise.svg";
+// utils/iconImports.js
 
-// 🔍 Debug: Ver qué está devolviendo realmente
-console.log('reloadIcon:', reloadIcon, typeof reloadIcon);
-console.log('optimizeIcon:', optimizeIcon, typeof optimizeIcon);
+const reloadIcon = "/icons/reload.svg";
+const optimizeIcon = "/icons/optimize.svg";
+const qualityIcon = "/icons/quality.svg";
+const noiseIcon = "/icons/noise.svg";
 
 export {
   reloadIcon,
