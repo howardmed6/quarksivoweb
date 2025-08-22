@@ -4,8 +4,8 @@
   },
   "routes": [
     {
-      "route": "/favicon.ico",
-      "serve": "/favicon.ico"
+      "route": "/favicon.svg",
+      "serve": "/favicon.svg"
     }
   ]
 }
