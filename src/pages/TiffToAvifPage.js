@@ -24,8 +24,8 @@ const TiffToAvifPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el AVIF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/tiff-avif-ejemplo.jpg",
-    "url": "https://tu-dominio.com/tiff-a-avif",
+    "image": "https://corquark.com/assets/ejemplos/tiff-avif-ejemplo.jpg",
+    "url": "https://corquark.com/tiff-a-avif",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿AVIF es mejor que WebP y JPEG?",
@@ -38,7 +38,7 @@ const TiffToAvifPage = () => {
       <Helmet>
         <title>TIFF a AVIF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte TIFF a AVIF gratis. Reduce hasta 50% el tamaño con superior calidad. El formato de imagen del futuro." />
-        <link rel="canonical" href="https://tu-dominio.com/tiff-a-avif" />
+        <link rel="canonical" href="https://corquark.com/tiff-a-avif" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

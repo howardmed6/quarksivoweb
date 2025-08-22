@@ -25,8 +25,8 @@ const HeicToWebpPage = () => {
      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
      { "@type":"HowToStep","text":"Descarga el WebP." }
    ],
-   "image": "https://tu-dominio.com/assets/ejemplos/heic-webp-ejemplo.jpg",
-   "url": "https://tu-dominio.com/heic-a-webp",
+   "image": "https://corquark.com/assets/ejemplos/heic-webp-ejemplo.jpg",
+   "url": "https://corquark.com/heic-a-webp",
    "mainEntity": [{
      "@type":"Question",
      "name":"¿Por qué convertir HEIC a WebP?",
@@ -39,7 +39,7 @@ const HeicToWebpPage = () => {
      <Helmet>
        <title>HEIC a WebP — Convertidor Online Gratis</title>
        <meta name="description" content="Convierte HEIC a WebP gratis. Transforma fotos de iPhone/iPad a formato moderno con mejor compresión y calidad." />
-       <link rel="canonical" href="https://tu-dominio.com/heic-a-webp" />
+       <link rel="canonical" href="https://corquark.com/heic-a-webp" />
        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
      </Helmet>
 

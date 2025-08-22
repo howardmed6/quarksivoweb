@@ -42,7 +42,7 @@ const PdfToDocxPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/pdf-a-docx';
+    canonical.href = 'https://corquark.com/pdf-a-docx';
 
     // JSON-LD
     const jsonLd = {
@@ -64,8 +64,8 @@ const PdfToDocxPage = () => {
           { "@type": "HowToStep", "text": "Descarga tu DOCX editable" }
         ]
       },
-      "image": "https://tu-dominio.com/assets/ejemplos/pdf-docx-ejemplo.jpg",
-      "url": "https://tu-dominio.com/pdf-a-docx",
+      "image": "https://corquark.com/assets/ejemplos/pdf-docx-ejemplo.jpg",
+      "url": "https://corquark.com/pdf-a-docx",
       "mainEntity": [{
         "@type": "Question",
         "name": "¿Se mantienen las tablas al convertir PDF a Word?",

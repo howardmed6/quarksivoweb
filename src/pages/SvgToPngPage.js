@@ -24,8 +24,8 @@ const SvgToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-png",
+    "image": "https://corquark.com/assets/ejemplos/svg-png-ejemplo.jpg",
+    "url": "https://corquark.com/svg-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Mantiene transparencia al convertir SVG a PNG?",
@@ -39,7 +39,7 @@ const SvgToPngPage = () => {
       <Helmet>
         <title>SVG a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte SVG a PNG gratis. Mantiene transparencia, optimiza tamaño y mejora calidad." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-png" />
+        <link rel="canonical" href="https://corquark.com/svg-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

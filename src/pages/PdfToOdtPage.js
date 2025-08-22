@@ -35,7 +35,7 @@ const PdfToOdtPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/pdf-a-odt';
+    canonical.href = 'https://corquark.com/pdf-a-odt';
 
     const jsonLd = {
       "@context": "https://schema.org",
@@ -48,7 +48,7 @@ const PdfToOdtPage = () => {
         "price": "0", 
         "priceCurrency": "USD" 
       },
-      "url": "https://tu-dominio.com/pdf-a-odt",
+      "url": "https://corquark.com/pdf-a-odt",
       "applicationSuite": "OpenDocument Format"
     };
 

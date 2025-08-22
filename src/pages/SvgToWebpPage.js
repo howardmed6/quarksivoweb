@@ -25,8 +25,8 @@ const SvgToWebpPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
       { "@type":"HowToStep","text":"Descarga el WebP." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-webp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-webp",
+    "image": "https://corquark.com/assets/ejemplos/svg-webp-ejemplo.jpg",
+    "url": "https://corquark.com/svg-a-webp",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la calidad al convertir SVG a WebP?",
@@ -40,7 +40,7 @@ const SvgToWebpPage = () => {
       <Helmet>
         <title>SVG a WebP — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte SVG a WebP gratis. Optimiza tamaño, mejora calidad o redimensiona en segundos." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-webp" />
+        <link rel="canonical" href="https://corquark.com/svg-a-webp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

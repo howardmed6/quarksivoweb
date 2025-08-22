@@ -25,8 +25,8 @@ const PngToBmpPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el BMP." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/png-bmp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/png-a-bmp",
+    "image": "https://corquark.com/assets/ejemplos/png-bmp-ejemplo.jpg",
+    "url": "https://corquark.com/png-a-bmp",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la transparencia al convertir PNG a BMP?",
@@ -39,7 +39,7 @@ const PngToBmpPage = () => {
       <Helmet>
         <title>PNG a BMP — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte PNG a BMP gratis. Formato sin compresión para máxima calidad. La transparencia se convierte a fondo blanco." />
-        <link rel="canonical" href="https://tu-dominio.com/png-a-bmp" />
+        <link rel="canonical" href="https://corquark.com/png-a-bmp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

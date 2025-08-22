@@ -25,8 +25,8 @@ const HeicToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/heic-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/heic-a-png",
+    "image": "https://corquark.com/assets/ejemplos/heic-png-ejemplo.jpg",
+    "url": "https://corquark.com/heic-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿PNG es mejor que JPG para convertir HEIC?",
@@ -39,7 +39,7 @@ const HeicToPngPage = () => {
       <Helmet>
         <title>HEIC a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte HEIC a PNG gratis. Fotos de iPhone/iPad a formato sin pérdida. Calidad máxima para edición y diseño." />
-        <link rel="canonical" href="https://tu-dominio.com/heic-a-png" />
+        <link rel="canonical" href="https://corquark.com/heic-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

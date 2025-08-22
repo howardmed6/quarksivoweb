@@ -25,8 +25,8 @@ const JpgToBmpPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el BMP." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-bmp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-bmp",
+    "image": "https://corquark.com/assets/ejemplos/jpg-bmp-ejemplo.jpg",
+    "url": "https://corquark.com/jpg-a-bmp",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Para qué usar BMP?",
@@ -39,7 +39,7 @@ const JpgToBmpPage = () => {
       <Helmet>
         <title>JPG a BMP — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte JPG a BMP gratis. Formato sin compresión para máxima calidad. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-bmp" />
+        <link rel="canonical" href="https://corquark.com/jpg-a-bmp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

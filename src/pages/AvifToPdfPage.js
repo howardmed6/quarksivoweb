@@ -24,8 +24,8 @@ const AvifToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/avif-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/avif-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Qué ventajas tiene convertir AVIF a PDF?",
@@ -38,7 +38,7 @@ const AvifToPdfPage = () => {
       <Helmet>
         <title>AVIF a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte AVIF a PDF gratis. Mantén la alta calidad y optimiza para documentos. Perfecto para impresión y archivo." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/avif-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

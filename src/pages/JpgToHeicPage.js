@@ -25,8 +25,8 @@ const JpgToHeicPage = () => {
      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
      { "@type":"HowToStep","text":"Descarga el HEIC." }
    ],
-   "image": "https://tu-dominio.com/assets/ejemplos/jpg-heic-ejemplo.jpg",
-   "url": "https://tu-dominio.com/jpg-a-heic",
+   "image": "https://corquark.com/assets/ejemplos/jpg-heic-ejemplo.jpg",
+   "url": "https://corquark.com/jpg-a-heic",
    "mainEntity": [{
      "@type":"Question",
      "name":"¿Por qué convertir JPG a HEIC?",
@@ -39,7 +39,7 @@ const JpgToHeicPage = () => {
      <Helmet>
        <title>JPG a HEIC — Convertidor Online Gratis</title>
        <meta name="description" content="Convierte JPG a HEIC gratis. Transforma imágenes JPG al formato Apple con mejor compresión y calidad." />
-       <link rel="canonical" href="https://tu-dominio.com/jpg-a-heic" />
+       <link rel="canonical" href="https://corquark.com/jpg-a-heic" />
        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
      </Helmet>
 

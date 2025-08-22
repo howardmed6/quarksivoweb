@@ -25,8 +25,8 @@ const GifToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/gif-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/gif-a-png",
+    "image": "https://corquark.com/assets/ejemplos/gif-png-ejemplo.jpg",
+    "url": "https://corquark.com/gif-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿PNG mantiene mejor calidad que GIF?",
@@ -39,7 +39,7 @@ const GifToPngPage = () => {
       <Helmet>
         <title>GIF a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte GIF a PNG gratis. Mejor calidad y soporte completo para transparencia. Extrae el primer frame." />
-        <link rel="canonical" href="https://tu-dominio.com/gif-a-png" />
+        <link rel="canonical" href="https://corquark.com/gif-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

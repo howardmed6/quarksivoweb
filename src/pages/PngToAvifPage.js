@@ -24,8 +24,8 @@ const PngToAvifPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el AVIF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/png-avif-ejemplo.jpg",
-    "url": "https://tu-dominio.com/png-a-avif",
+    "image": "https://corquark.com/assets/ejemplos/png-avif-ejemplo.jpg",
+    "url": "https://corquark.com/png-a-avif",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Cuánto espacio ahorra convertir PNG a AVIF?",
@@ -39,7 +39,7 @@ const PngToAvifPage = () => {
       <Helmet>
         <title>PNG a AVIF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte PNG a AVIF gratis. Reduce hasta 90% el tamaño con calidad superior. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/png-a-avif" />
+        <link rel="canonical" href="https://corquark.com/png-a-avif" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

@@ -24,8 +24,8 @@ const SvgToJpegPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
       { "@type":"HowToStep","text":"Descarga el JPEG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-jpeg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-jpeg",
+    "image": "https://corquark.com/assets/ejemplos/svg-jpeg-ejemplo.jpg",
+    "url": "https://corquark.com/svg-a-jpeg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Cuál es la diferencia entre convertir SVG a JPG o JPEG?",
@@ -39,7 +39,7 @@ const SvgToJpegPage = () => {
       <Helmet>
         <title>SVG a JPEG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte SVG a JPEG gratis. Optimización avanzada, fondo automático y redimensionado." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-jpeg" />
+        <link rel="canonical" href="https://corquark.com/svg-a-jpeg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

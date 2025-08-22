@@ -25,8 +25,8 @@ const GifToMp4Page = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el MP4." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/gif-mp4-ejemplo.jpg",
-    "url": "https://tu-dominio.com/gif-a-mp4",
+    "image": "https://corquark.com/assets/ejemplos/gif-mp4-ejemplo.jpg",
+    "url": "https://corquark.com/gif-a-mp4",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir GIF a MP4?",
@@ -39,7 +39,7 @@ const GifToMp4Page = () => {
       <Helmet>
         <title>GIF a MP4 — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte GIF a MP4 gratis. Reduce hasta 90% el tamaño manteniendo calidad. Perfecto para redes sociales y web." />
-        <link rel="canonical" href="https://tu-dominio.com/gif-a-mp4" />
+        <link rel="canonical" href="https://corquark.com/gif-a-mp4" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

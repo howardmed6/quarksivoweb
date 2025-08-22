@@ -24,8 +24,8 @@ const IcoToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/ico-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/ico-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/ico-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/ico-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir ICO a PDF?",
@@ -38,7 +38,7 @@ const IcoToPdfPage = () => {
       <Helmet>
         <title>ICO a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte ICO a PDF gratis. Mejora visualización de iconos. Perfecto para documentación y presentaciones." />
-        <link rel="canonical" href="https://tu-dominio.com/ico-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/ico-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

@@ -25,8 +25,8 @@ const AvifToHeicPage = () => {
      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
      { "@type":"HowToStep","text":"Descarga el HEIC." }
    ],
-   "image": "https://tu-dominio.com/assets/ejemplos/avif-heic-ejemplo.jpg",
-   "url": "https://tu-dominio.com/avif-a-heic",
+   "image": "https://corquark.com/assets/ejemplos/avif-heic-ejemplo.jpg",
+   "url": "https://corquark.com/avif-a-heic",
    "mainEntity": [{
      "@type":"Question",
      "name":"¿Por qué convertir AVIF a HEIC?",
@@ -39,7 +39,7 @@ const AvifToHeicPage = () => {
      <Helmet>
        <title>AVIF a HEIC — Convertidor Online Gratis</title>
        <meta name="description" content="Convierte AVIF a HEIC gratis. Transforma imágenes AVIF al formato Apple para mejor integración." />
-       <link rel="canonical" href="https://tu-dominio.com/avif-a-heic" />
+       <link rel="canonical" href="https://corquark.com/avif-a-heic" />
        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
      </Helmet>
 

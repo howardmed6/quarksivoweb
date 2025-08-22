@@ -24,8 +24,8 @@ const GifToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/gif-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/gif-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/gif-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/gif-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Qué pasa con la animación al convertir GIF a PDF?",
@@ -38,7 +38,7 @@ const GifToPdfPage = () => {
       <Helmet>
         <title>GIF a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte GIF a PDF gratis. Extrae el primer frame como imagen estática. Perfecto para documentos y presentaciones." />
-        <link rel="canonical" href="https://tu-dominio.com/gif-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/gif-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

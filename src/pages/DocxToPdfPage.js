@@ -40,7 +40,7 @@ const DocxToPdfPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/docx-a-pdf';
+    canonical.href = 'https://corquark.com/docx-a-pdf';
 
     const jsonLd = {
       "@context": "https://schema.org",
@@ -61,8 +61,8 @@ const DocxToPdfPage = () => {
           { "@type": "HowToStep", "text": "Descarga tu PDF listo para compartir" }
         ]
       },
-      "image": "https://tu-dominio.com/assets/ejemplos/docx-pdf-ejemplo.jpg",
-      "url": "https://tu-dominio.com/docx-a-pdf"
+      "image": "https://corquark.com/assets/ejemplos/docx-pdf-ejemplo.jpg",
+      "url": "https://corquark.com/docx-a-pdf"
     };
 
     let jsonLdScript = document.querySelector('script[type="application/ld+json"]');

@@ -25,8 +25,8 @@ const BmpToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/bmp-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/bmp-a-png",
+    "image": "https://corquark.com/assets/ejemplos/bmp-png-ejemplo.jpg",
+    "url": "https://corquark.com/bmp-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿PNG es mejor que BMP?",
@@ -39,7 +39,7 @@ const BmpToPngPage = () => {
       <Helmet>
         <title>BMP a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte BMP a PNG gratis. Mejor compresión sin pérdidas y soporte para transparencia. Optimiza para web." />
-        <link rel="canonical" href="https://tu-dominio.com/bmp-a-png" />
+        <link rel="canonical" href="https://corquark.com/bmp-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

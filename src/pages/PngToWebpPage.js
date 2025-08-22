@@ -39,7 +39,7 @@ const PngToWebpPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/png-a-webp';
+    canonical.href = 'https://corquark.com/png-a-webp';
 
     // JSON-LD
     const jsonLd = {
@@ -58,8 +58,8 @@ const PngToWebpPage = () => {
         { "@type": "HowToStep", "text": "Elige la opción deseada (calidad/tamaño)." },
         { "@type": "HowToStep", "text": "Descarga el WEBP." }
       ],
-      "image": "https://tu-dominio.com/assets/ejemplos/png-jpg-ejemplo.webp",
-      "url": "https://tu-dominio.com/png-a-webp",
+      "image": "https://corquark.com/assets/ejemplos/png-jpg-ejemplo.webp",
+      "url": "https://corquark.com/png-a-webp",
       "mainEntity": [{
         "@type": "Question",
         "name": "¿Pierde calidad al convertir PNG a WEBP?",

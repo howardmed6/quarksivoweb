@@ -25,8 +25,8 @@ const HeicToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/heic-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/heic-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/heic-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/heic-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir HEIC a JPG?",
@@ -39,7 +39,7 @@ const HeicToJpgPage = () => {
       <Helmet>
         <title>HEIC a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte HEIC a JPG gratis. Transforma fotos de iPhone/iPad a formato universal. Compatibilidad total con cualquier dispositivo." />
-        <link rel="canonical" href="https://tu-dominio.com/heic-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/heic-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

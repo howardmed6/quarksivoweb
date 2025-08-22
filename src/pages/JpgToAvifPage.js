@@ -25,8 +25,8 @@ const JpgToAvifPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el AVIF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-avif-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-avif",
+    "image": "https://corquark.com/assets/ejemplos/jpg-avif-ejemplo.jpg",
+    "url": "https://corquark.com/jpg-a-avif",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿AVIF es mejor que JPG?",
@@ -39,7 +39,7 @@ const JpgToAvifPage = () => {
       <Helmet>
         <title>JPG a AVIF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte JPG a AVIF gratis. Reduce hasta 50% el tamaño con mejor calidad. Formato de nueva generación para web." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-avif" />
+        <link rel="canonical" href="https://corquark.com/jpg-a-avif" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

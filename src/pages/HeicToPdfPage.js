@@ -24,8 +24,8 @@ const HeicToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/heic-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/heic-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/heic-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/heic-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir HEIC a PDF?",
@@ -38,7 +38,7 @@ const HeicToPdfPage = () => {
       <Helmet>
         <title>HEIC a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte HEIC a PDF gratis. Mejora compatibilidad de fotos iPhone. Mantén calidad y optimiza tamaño." />
-        <link rel="canonical" href="https://tu-dominio.com/heic-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/heic-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

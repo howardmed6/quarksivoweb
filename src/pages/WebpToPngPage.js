@@ -24,8 +24,8 @@ const WebpToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/webp-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/webp-a-png",
+    "image": "https://corquark.com/assets/ejemplos/webp-png-ejemplo.jpg",
+    "url": "https://corquark.com/webp-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Pierde calidad al convertir WEBP a PNG?",
@@ -39,7 +39,7 @@ const WebpToPngPage = () => {
       <Helmet>
         <title>WEBP a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte WEBP a PNG gratis. Optimiza tamaño, mejora calidad o reduce ruido en segundos." />
-        <link rel="canonical" href="https://tu-dominio.com/webp-a-png" />
+        <link rel="canonical" href="https://corquark.com/webp-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

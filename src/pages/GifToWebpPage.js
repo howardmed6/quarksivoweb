@@ -25,8 +25,8 @@ const GifToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/gif-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/gif-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/gif-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/gif-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Qué pasa con las animaciones al convertir GIF a JPG?",
@@ -39,7 +39,7 @@ const GifToJpgPage = () => {
       <Helmet>
         <title>GIF a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte GIF a JPG gratis. Extrae el primer frame como imagen estática. Ideal para thumbnails y previews." />
-        <link rel="canonical" href="https://tu-dominio.com/gif-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/gif-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

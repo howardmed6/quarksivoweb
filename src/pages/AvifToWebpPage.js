@@ -24,8 +24,8 @@ const AvifToWebpPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el WebP." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-webp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-webp",
+    "image": "https://corquark.com/assets/ejemplos/avif-webp-ejemplo.jpg",
+    "url": "https://corquark.com/avif-a-webp",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Qué ventajas tiene convertir AVIF a WebP?",
@@ -38,7 +38,7 @@ const AvifToWebpPage = () => {
       <Helmet>
         <title>AVIF a WebP — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte AVIF a WebP gratis. Mejor compatibilidad web manteniendo compresión eficiente. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-webp" />
+        <link rel="canonical" href="https://corquark.com/avif-a-webp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

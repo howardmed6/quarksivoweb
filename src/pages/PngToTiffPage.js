@@ -24,8 +24,8 @@ const PngToTiffPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el TIFF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/png-tiff-ejemplo.jpg",
-    "url": "https://tu-dominio.com/png-a-tiff",
+    "image": "https://corquark.com/assets/ejemplos/png-tiff-ejemplo.jpg",
+    "url": "https://corquark.com/png-a-tiff",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la transparencia al convertir PNG a TIFF?",
@@ -38,7 +38,7 @@ const PngToTiffPage = () => {
       <Helmet>
         <title>PNG a TIFF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte PNG a TIFF gratis. Mantén transparencia y mejora calidad. Ideal para impresión profesional y archivo." />
-        <link rel="canonical" href="https://tu-dominio.com/png-a-tiff" />
+        <link rel="canonical" href="https://corquark.com/png-a-tiff" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

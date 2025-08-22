@@ -35,7 +35,7 @@ const PdfToRtfPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/pdf-a-rtf';
+    canonical.href = 'https://corquark.com/pdf-a-rtf';
 
     const jsonLd = {
       "@context": "https://schema.org",
@@ -48,7 +48,7 @@ const PdfToRtfPage = () => {
         "price": "0", 
         "priceCurrency": "USD" 
       },
-      "url": "https://tu-dominio.com/pdf-a-rtf"
+      "url": "https://corquark.com/pdf-a-rtf"
     };
 
     let jsonLdScript = document.querySelector('script[type="application/ld+json"]');

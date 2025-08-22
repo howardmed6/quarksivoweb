@@ -24,8 +24,8 @@ const IcoToSvgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el SVG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/ico-svg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/ico-a-svg",
+    "image": "https://corquark.com/assets/ejemplos/ico-svg-ejemplo.jpg",
+    "url": "https://corquark.com/ico-a-svg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Puedo convertir iconos ICO a formato vectorial SVG?",
@@ -38,7 +38,7 @@ const IcoToSvgPage = () => {
       <Helmet>
         <title>ICO a SVG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte ICO a SVG gratis. Transforma iconos a formato vectorial escalable. Ideal para web y aplicaciones modernas." />
-        <link rel="canonical" href="https://tu-dominio.com/ico-a-svg" />
+        <link rel="canonical" href="https://corquark.com/ico-a-svg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

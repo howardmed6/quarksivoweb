@@ -24,8 +24,8 @@ const WebpToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/webp-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/webp-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/webp-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/webp-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la transparencia al convertir WebP a PDF?",
@@ -38,7 +38,7 @@ const WebpToPdfPage = () => {
       <Helmet>
         <title>WebP a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte WebP a PDF gratis. Mantén transparencia y calidad optimizada. Perfecto para documentos web." />
-        <link rel="canonical" href="https://tu-dominio.com/webp-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/webp-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

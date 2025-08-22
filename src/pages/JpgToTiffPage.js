@@ -24,8 +24,8 @@ const JpgToTiffPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el TIFF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-tiff-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-tiff",
+    "image": "https://corquark.com/assets/ejemplos/jpg-tiff-ejemplo.jpg",
+    "url": "https://corquark.com/jpg-a-tiff",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir JPG a TIFF?",
@@ -38,7 +38,7 @@ const JpgToTiffPage = () => {
       <Helmet>
         <title>JPG a TIFF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte JPG a TIFF gratis. Mejora la calidad sin compresión con pérdida. Ideal para impresión profesional y archivo." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-tiff" />
+        <link rel="canonical" href="https://corquark.com/jpg-a-tiff" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

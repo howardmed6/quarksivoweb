@@ -24,8 +24,8 @@ const SvgToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (tamaño/calidad/dimensiones)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/svg-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/svg-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/svg-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/svg-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Qué pasa con la transparencia al convertir SVG a JPG?",
@@ -39,7 +39,7 @@ const SvgToJpgPage = () => {
       <Helmet>
         <title>SVG a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte SVG a JPG gratis. Aplica fondo automático, optimiza tamaño y mejora calidad." />
-        <link rel="canonical" href="https://tu-dominio.com/svg-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/svg-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

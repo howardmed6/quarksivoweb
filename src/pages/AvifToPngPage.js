@@ -24,8 +24,8 @@ const AvifToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-png",
+    "image": "https://corquark.com/assets/ejemplos/avif-png-ejemplo.jpg",
+    "url": "https://corquark.com/avif-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la transparencia al convertir AVIF a PNG?",
@@ -38,7 +38,7 @@ const AvifToPngPage = () => {
       <Helmet>
         <title>AVIF a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte AVIF a PNG gratis. Mantén transparencia y calidad sin pérdidas. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-png" />
+        <link rel="canonical" href="https://corquark.com/avif-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

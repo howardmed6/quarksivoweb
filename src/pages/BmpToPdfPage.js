@@ -24,8 +24,8 @@ const BmpToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/bmp-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/bmp-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/bmp-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/bmp-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir BMP a PDF?",
@@ -38,7 +38,7 @@ const BmpToPdfPage = () => {
       <Helmet>
         <title>BMP a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte BMP a PDF gratis. Reduce drásticamente el tamaño manteniendo calidad. Optimiza archivos grandes." />
-        <link rel="canonical" href="https://tu-dominio.com/bmp-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/bmp-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

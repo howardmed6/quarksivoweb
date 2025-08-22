@@ -24,8 +24,8 @@ const WebpToTiffPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el TIFF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/webp-tiff-ejemplo.jpg",
-    "url": "https://tu-dominio.com/webp-a-tiff",
+    "image": "https://corquark.com/assets/ejemplos/webp-tiff-ejemplo.jpg",
+    "url": "https://corquark.com/webp-a-tiff",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Por qué convertir WebP a TIFF?",
@@ -38,7 +38,7 @@ const WebpToTiffPage = () => {
       <Helmet>
         <title>WebP a TIFF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte WebP a TIFF gratis. Mejora compatibilidad y calidad sin pérdidas. Ideal para impresión profesional." />
-        <link rel="canonical" href="https://tu-dominio.com/webp-a-tiff" />
+        <link rel="canonical" href="https://corquark.com/webp-a-tiff" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

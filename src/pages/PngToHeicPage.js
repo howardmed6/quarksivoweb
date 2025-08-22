@@ -25,8 +25,8 @@ const PngToHeicPage = () => {
      { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
      { "@type":"HowToStep","text":"Descarga el HEIC." }
    ],
-   "image": "https://tu-dominio.com/assets/ejemplos/png-heic-ejemplo.jpg",
-   "url": "https://tu-dominio.com/png-a-heic",
+   "image": "https://corquark.com/assets/ejemplos/png-heic-ejemplo.jpg",
+   "url": "https://corquark.com/png-a-heic",
    "mainEntity": [{
      "@type":"Question",
      "name":"¿Por qué convertir PNG a HEIC?",
@@ -39,7 +39,7 @@ const PngToHeicPage = () => {
      <Helmet>
        <title>PNG a HEIC — Convertidor Online Gratis</title>
        <meta name="description" content="Convierte PNG a HEIC gratis. Transforma imágenes PNG con transparencia al formato Apple eficiente." />
-       <link rel="canonical" href="https://tu-dominio.com/png-a-heic" />
+       <link rel="canonical" href="https://corquark.com/png-a-heic" />
        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
      </Helmet>
 

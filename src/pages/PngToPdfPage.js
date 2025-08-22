@@ -24,8 +24,8 @@ const PngToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/png-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/png-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/png-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/png-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la transparencia al convertir PNG a PDF?",
@@ -38,7 +38,7 @@ const PngToPdfPage = () => {
       <Helmet>
         <title>PNG a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte PNG a PDF gratis. Mantén transparencia y calidad sin pérdidas. Optimiza tamaño y mejora calidad." />
-        <link rel="canonical" href="https://tu-dominio.com/png-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/png-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

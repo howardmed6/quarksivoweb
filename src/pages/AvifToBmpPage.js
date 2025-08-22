@@ -24,8 +24,8 @@ const AvifToBmpPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el BMP." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-bmp-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-bmp",
+    "image": "https://corquark.com/assets/ejemplos/avif-bmp-ejemplo.jpg",
+    "url": "https://corquark.com/avif-a-bmp",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Para qué usar BMP en lugar de otros formatos?",
@@ -38,7 +38,7 @@ const AvifToBmpPage = () => {
       <Helmet>
         <title>AVIF a BMP — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte AVIF a BMP gratis. Máxima compatibilidad con software legacy. Sin compresión para preservar calidad original." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-bmp" />
+        <link rel="canonical" href="https://corquark.com/avif-a-bmp" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

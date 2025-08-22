@@ -23,8 +23,8 @@ const PngToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/png-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/png-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/png-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/png-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Pierde calidad al convertir PNG a JPG?",
@@ -38,7 +38,7 @@ const PngToJpgPage = () => {
       <Helmet>
         <title>PNG a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte PNG a JPG gratis. Optimiza tamaño y mejora calidad en segundos." />
-        <link rel="canonical" href="https://tu-dominio.com/png-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/png-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

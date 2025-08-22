@@ -25,8 +25,8 @@ const BmpToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/bmp-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/bmp-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/bmp-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/bmp-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Cuánto se reduce el tamaño al convertir BMP a JPG?",
@@ -39,7 +39,7 @@ const BmpToJpgPage = () => {
       <Helmet>
         <title>BMP a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte BMP a JPG gratis. Reduce hasta 90% el tamaño del archivo. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/bmp-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/bmp-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

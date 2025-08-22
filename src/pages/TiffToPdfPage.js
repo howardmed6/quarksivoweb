@@ -24,8 +24,8 @@ const TiffToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/tiff-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/tiff-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/tiff-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/tiff-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la alta calidad al convertir TIFF a PDF?",
@@ -38,7 +38,7 @@ const TiffToPdfPage = () => {
       <Helmet>
         <title>TIFF a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte TIFF a PDF gratis. Mantén alta calidad y resolución. Perfecto para documentos profesionales e impresión." />
-        <link rel="canonical" href="https://tu-dominio.com/tiff-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/tiff-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

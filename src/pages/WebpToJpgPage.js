@@ -24,8 +24,8 @@ const WebpToJpgPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el JPG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/webp-jpg-ejemplo.jpg",
-    "url": "https://tu-dominio.com/webp-a-jpg",
+    "image": "https://corquark.com/assets/ejemplos/webp-jpg-ejemplo.jpg",
+    "url": "https://corquark.com/webp-a-jpg",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Pierde calidad al convertir WEBP a JPG?",
@@ -39,7 +39,7 @@ const WebpToJpgPage = () => {
       <Helmet>
         <title>WEBP a JPG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte WEBP a JPG gratis. Optimiza tamaño, mejora calidad o reduce ruido en segundos." />
-        <link rel="canonical" href="https://tu-dominio.com/webp-a-jpg" />
+        <link rel="canonical" href="https://corquark.com/webp-a-jpg" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

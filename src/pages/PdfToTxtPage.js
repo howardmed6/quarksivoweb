@@ -35,7 +35,7 @@ const PdfToTxtPage = () => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = 'https://tu-dominio.com/pdf-a-txt';
+    canonical.href = 'https://corquark.com/pdf-a-txt';
 
     const jsonLd = {
       "@context": "https://schema.org",
@@ -56,7 +56,7 @@ const PdfToTxtPage = () => {
           { "@type": "HowToStep", "text": "Descarga el archivo TXT con tu texto" }
         ]
       },
-      "url": "https://tu-dominio.com/pdf-a-txt"
+      "url": "https://corquark.com/pdf-a-txt"
     };
 
     let jsonLdScript = document.querySelector('script[type="application/ld+json"]');

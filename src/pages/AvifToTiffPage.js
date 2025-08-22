@@ -24,8 +24,8 @@ const AvifToTiffPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el TIFF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/avif-tiff-ejemplo.jpg",
-    "url": "https://tu-dominio.com/avif-a-tiff",
+    "image": "https://corquark.com/assets/ejemplos/avif-tiff-ejemplo.jpg",
+    "url": "https://corquark.com/avif-a-tiff",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Puedo convertir el moderno formato AVIF a TIFF?",
@@ -38,7 +38,7 @@ const AvifToTiffPage = () => {
       <Helmet>
         <title>AVIF a TIFF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte AVIF a TIFF gratis. Mejora compatibilidad manteniendo calidad. Ideal para uso profesional y archivo." />
-        <link rel="canonical" href="https://tu-dominio.com/avif-a-tiff" />
+        <link rel="canonical" href="https://corquark.com/avif-a-tiff" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

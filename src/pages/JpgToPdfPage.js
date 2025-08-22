@@ -24,8 +24,8 @@ const JpgToPdfPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PDF." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-pdf-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-pdf",
+    "image": "https://corquark.com/assets/ejemplos/jpg-pdf-ejemplo.jpg",
+    "url": "https://corquark.com/jpg-a-pdf",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿Se mantiene la calidad al convertir JPG a PDF?",
@@ -38,7 +38,7 @@ const JpgToPdfPage = () => {
       <Helmet>
         <title>JPG a PDF — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte JPG a PDF gratis. Mantén calidad original y optimiza tamaño. Perfecto para documentos e imágenes." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-pdf" />
+        <link rel="canonical" href="https://corquark.com/jpg-a-pdf" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 

@@ -25,8 +25,8 @@ const JpgToPngPage = () => {
       { "@type":"HowToStep","text":"Elige la opción deseada (calidad/tamaño/ruido)." },
       { "@type":"HowToStep","text":"Descarga el PNG." }
     ],
-    "image": "https://tu-dominio.com/assets/ejemplos/jpg-png-ejemplo.jpg",
-    "url": "https://tu-dominio.com/jpg-a-png",
+    "image": "https://corquark.com/assets/ejemplos/jpg-png-ejemplo.jpg",
+    "url": "https://corquark.com/jpg-a-png",
     "mainEntity": [{
       "@type":"Question",
       "name":"¿PNG tiene mejor calidad que JPG?",
@@ -39,7 +39,7 @@ const JpgToPngPage = () => {
       <Helmet>
         <title>JPG a PNG — Convertidor Online Gratis</title>
         <meta name="description" content="Convierte JPG a PNG gratis. Obtén transparencia y calidad sin pérdida. Optimiza tamaño, mejora calidad o reduce ruido." />
-        <link rel="canonical" href="https://tu-dominio.com/jpg-a-png" />
+        <link rel="canonical" href="https://corquark.com/jpg-a-png" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
 
