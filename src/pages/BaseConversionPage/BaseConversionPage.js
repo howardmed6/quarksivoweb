@@ -30,7 +30,7 @@ const BaseConversionPage = ({
   const [rateLimitInfo, setRateLimitInfo] = useState(null);
 
   // URL dinámica basada en functionType y los formatos
-  const BASE_URL = `https://api.corquark.com//api/${functionType}`;
+  const BASE_URL = `https://api.corquark.com/api/${functionType}`;
   const AZURE_FUNCTION_URL = `${BASE_URL}/${fromFormat}-to-${toFormat}`;
 
   const handleFileChange = useCallback((newFile) => {
