@@ -98,7 +98,7 @@ export const conversionOptions = [
 
 
 { id: 1, title: 'Word a PDF', icon: '📄', route: '/document/word-to-pdf', category: 'documents' },
-   { id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
+   //{ id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
   // { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
   // { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
    { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },

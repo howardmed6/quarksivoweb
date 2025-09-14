@@ -78,6 +78,7 @@ import IcoToPdfPage from '../pages/IcoToPdfPage';
 import GifToMp4Page from '../pages/GifToMp4Page';
 
 import NotFoundPage from '../pages/NotFoundPage';
+import WordToPdfPage from '../pages/WordToPdfPage';
 
 // Exportamos todas las páginas como un objeto
 export const pages = {
@@ -148,6 +149,7 @@ GifToPdfPage,
 TiffToPdfPage,
 SvgToPdfPage,
 IcoToPdfPage,
+WordToPdfPage,
 
   // Video
   GifToMp4Page,
@@ -204,6 +206,7 @@ AvifToHeicPage,
 AvifToPngPage,
 AvifToWebpPage,
 AvifToBmpPage,
+WordToPdfPage,
 
 JpgToPdfPage,
 PngToPdfPage,

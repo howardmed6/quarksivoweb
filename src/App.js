@@ -43,6 +43,7 @@ AvifToHeicPage,
 AvifToPngPage,
 AvifToWebpPage,
 AvifToBmpPage,
+WordToPdfPage,
 
   SvgToWebpPage,
   SvgToPngPage, 
@@ -163,6 +164,8 @@ const App = () => {
 <Route path="/image/png-to-tiff" component={PngToTiffPage} />
 <Route path="/image/webp-to-tiff" component={WebpToTiffPage} />
 <Route path="/image/avif-to-tiff" component={AvifToTiffPage} />
+<Route path="/document/word-to-pdf" component={WordToPdfPage} />
+
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
             
