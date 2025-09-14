@@ -103,6 +103,7 @@ const WordToPdfPage = () => {
         icon={<img src={reloadIcon} alt="convertir" width={124} height={124} />}
         fromFormat="docx"
         toFormat="pdf"
+        functionType = "document"
         acceptedTypes={['doc', 'docx']}
         conversionOptions={conversionOptions}
         comboType="combo3"
