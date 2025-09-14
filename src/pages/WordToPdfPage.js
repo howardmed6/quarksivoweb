@@ -101,7 +101,7 @@ const WordToPdfPage = () => {
       <BaseConversionPage
         title="Word a PDF"
         icon={<img src={reloadIcon} alt="convertir" width={124} height={124} />}
-        fromFormat="docx"
+        fromFormat="word"
         toFormat="pdf"
         functionType = "document"
         acceptedTypes={['doc', 'docx']}
