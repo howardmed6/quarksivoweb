@@ -12,7 +12,7 @@ const BaseConversionPage = ({
   icon,
   fromFormat,
   toFormat,
-  functionType = "documents",
+  functionType = "document",
   acceptedTypes,
   conversionOptions = [],
   comboType = 'combo1'
