@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import BaseConversionPage from './BaseConversionPage/BaseConversionPage';
 import ExtraSection from './BaseConversionPage/ExtraSection';
-import { reloadIcon, optimizeIcon, qualityIcon, noiseIcon } from '../utils/iconImports';
+import { reloadIcon } from '../utils/iconImports';
 import '../styles/pagespages.css';
 
 const TxtToWordPage = () => {
