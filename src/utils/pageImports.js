@@ -80,6 +80,12 @@ import GifToMp4Page from '../pages/GifToMp4Page';
 import NotFoundPage from '../pages/NotFoundPage';
 import WordToPdfPage from '../pages/WordToPdfPage';
 
+
+import TxtToPdfPage from '../pages/TxtToPdfPage';
+import TxtToDocxPage from '../pages/TxtToDocxPage';
+import TxtToWordPage from '../pages/TxtToWordPage';
+import TxtToPptPage from '../pages/TxtToPptPage';
+import TxtToHtmlPage from '../pages/TxtToHtmlPage';
 // Exportamos todas las páginas como un objeto
 export const pages = {
   HomePage,
@@ -90,6 +96,14 @@ export const pages = {
   OfertasPage,
   BlogPage,
   
+
+  TxtToPdfPage,
+  TxtToDocxPage,
+  TxtToWordPage,
+  TxtToPptPage,
+  TxtToHtmlPage,
+
+
   // Documentos
   DocxToPdfPage,
   PdfToDocxPage, 
@@ -167,6 +181,12 @@ export {
   OfertasPage,
   BlogPage,
   
+
+    TxtToPdfPage,
+  TxtToDocxPage,
+  TxtToWordPage,
+  TxtToPptPage,
+  TxtToHtmlPage,
   // Documentos
   DocxToPdfPage,
   PdfToDocxPage, // No existe aún

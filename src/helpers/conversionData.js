@@ -89,6 +89,11 @@ export const conversionOptions = [
 
 { id: 184, title: 'ICO a PDF', icon: '📄', route: '/image/ico-to-pdf', category: 'images' },
 
+{ id: 185, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
+{ id: 186, title: 'TXT a DOCX', icon: '📝', route: '/document/txt-to-docx', category: 'documents' },
+{ id: 187, title: 'TXT a Word', icon: '📄', route: '/document/txt-to-word', category: 'documents' },
+{ id: 188, title: 'TXT a PPT', icon: '📊', route: '/document/txt-to-ppt', category: 'documents' },
+{ id: 189, title: 'TXT a HTML', icon: '🌐', route: '/document/txt-to-html', category: 'documents' },
 
 
 
@@ -101,8 +106,8 @@ export const conversionOptions = [
    //{ id: 2, title: 'PDF a Word', icon: '📝', route: '/document/pdf-to-word', category: 'documents' },
   // { id: 3, title: 'Excel a PDF', icon: '📊', route: '/document/excel-to-pdf', category: 'documents' },
   // { id: 4, title: 'PDF a Excel', icon: '📊', route: '/document/pdf-to-excel', category: 'documents' },
-   { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
-   { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
+ //  { id: 5, title: 'PPT a PDF', icon: '📽️', route: '/document/ppt-to-pdf', category: 'documents' },
+ //  { id: 6, title: 'PDF a PPT', icon: '📽️', route: '/document/pdf-to-ppt', category: 'documents' },
    //{ id: 7, title: 'Convertir a PDF', icon: '📋', route: '/document/any-to-pdf', category: 'documents' },
    //{ id: 8, title: 'TXT a PDF', icon: '📄', route: '/document/txt-to-pdf', category: 'documents' },
   // { id: 9, title: 'PDF a TXT', icon: '📄', route: '/document/pdf-to-txt', category: 'documents' },

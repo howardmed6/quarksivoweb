@@ -14,6 +14,12 @@ import {
   NosotrosPage,
   OfertasPage,
   BlogPage,
+
+    TxtToPdfPage,
+  TxtToDocxPage,
+  TxtToWordPage,
+  TxtToPptPage,
+  TxtToHtmlPage,
   
   // Páginas de conversión de documentos
   DocxToPdfPage,  
@@ -165,6 +171,12 @@ const App = () => {
 <Route path="/image/webp-to-tiff" component={WebpToTiffPage} />
 <Route path="/image/avif-to-tiff" component={AvifToTiffPage} />
 <Route path="/document/word-to-pdf" component={WordToPdfPage} />
+
+<Route path="/document/txt-to-pdf" component={TxtToPdfPage} />
+<Route path="/document/txt-to-docx" component={TxtToDocxPage} />
+<Route path="/document/txt-to-word" component={TxtToWordPage} />
+<Route path="/document/txt-to-ppt" component={TxtToPptPage} />
+<Route path="/document/txt-to-html" component={TxtToHtmlPage} />
 
             {/* Conversiones de video */}
             <Route path="/video/gif-to-mp4" component={GifToMp4Page} />
