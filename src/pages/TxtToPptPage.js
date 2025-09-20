@@ -7,9 +7,9 @@ import '../styles/pagespages.css';
 
 const TxtToPptPage = () => {
   const conversionOptions = [
-    { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Más contenido por slide' },
-    { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Slides más elegantes' },
-    { id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Texto más limpio' }
+   // { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Más contenido por slide' },
+    //{ id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Slides más elegantes' },
+  //  { id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Texto más limpio' }
   ];
 
   const jsonLd = {

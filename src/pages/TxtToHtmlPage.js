@@ -7,9 +7,9 @@ import '../styles/pagespages.css';
 
 const TxtToHtmlPage = () => {
   const conversionOptions = [
-    { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'HTML ligero (sin CSS)' },
-    { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Diseño elegante' },
-    { id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Limpiar formato' }
+ //   { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'HTML ligero (sin CSS)' },
+  //  { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Diseño elegante' },
+   // { id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Limpiar formato' }
   ];
 
   const jsonLd = {

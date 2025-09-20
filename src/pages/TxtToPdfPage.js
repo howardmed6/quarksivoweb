@@ -7,9 +7,9 @@ import '../styles/pagespages.css';
 
 const TxtToPdfPage = () => {
   const conversionOptions = [
-    { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Reducir tamaño (fuente menor)' },
-    { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar presentación' },
-    { id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Limpiar formato' }
+   // { id: 'optimize-size', icon: <img src={optimizeIcon} alt="optimizar" width={24} height={24} />, label: 'Reducir tamaño (fuente menor)' },
+   // { id: 'improve-quality', icon: <img src={qualityIcon} alt="calidad" width={24} height={24} />, label: 'Mejorar presentación' },
+    //{ id: 'reduce-noise', icon: <img src={noiseIcon} alt="ruido" width={24} height={24} />, label: 'Limpiar formato' }
   ];
 
   const jsonLd = {
