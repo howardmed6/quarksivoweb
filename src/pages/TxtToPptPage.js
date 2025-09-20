@@ -69,6 +69,11 @@ const TxtToPptPage = () => {
         <div style={{ padding: '20px', textAlign: 'center' }}>
           <h3>De texto a presentación en segundos</h3>
           <p>
+             <img 
+    src="https://res.cloudinary.com/dpj17zdr2/image/upload/v1758386894/ChatGPT_Image_20_sept_2025_11_32_15_trcxr0.png" 
+    alt="Conversión de texto a PowerPoint - CorQuark" 
+    style={{ maxWidth: '300px', margin: '20px auto', display: 'block' }}
+  />
             Perfecto para convertir apuntes, guiones o documentos en presentaciones. 
             El algoritmo divide automáticamente el contenido en slides legibles y bien estructurados.
           </p>
