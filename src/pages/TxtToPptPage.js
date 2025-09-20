@@ -58,7 +58,7 @@ const TxtToPptPage = () => {
         title="TXT a PPT"
         icon={<img src={reloadIcon} alt="reload" width={124} height={124} />}
         fromFormat="txt"
-        toFormat="ppt"
+        toFormat="pptx"
         functionType="document"
         acceptedTypes={['txt']}
         conversionOptions={conversionOptions}
